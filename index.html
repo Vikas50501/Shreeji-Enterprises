@@ -276,8 +276,8 @@
       <div style="text-align:left;">
         <h2 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(1.5rem,2.8vw,2.1rem); line-height:1.3; color:#0C2530; margin:0 0 20px;">Electric field compensation: preventing the strike, not just surviving it</h2>
         <div style="display:flex; gap:4px; padding:4px; background:#F2F7F6; border-radius:100px; width:fit-content; margin-bottom:24px;">
-          <button onClick="{{ setLightningMode('conventional') }}" class="toggle-btn" style="padding:9px 18px; border-radius:100px; border:none; cursor:pointer; font-size:13px; font-weight:600; font-family:'Albert Sans', sans-serif; background:{{ modeConventionalBg }}; color:{{ modeConventionalColor }}; transition:all .25s;">Conventional rod</button>
-          <button onClick="{{ setLightningMode('compensation') }}" class="toggle-btn" style="padding:9px 18px; border-radius:100px; border:none; cursor:pointer; font-size:13px; font-weight:600; font-family:'Albert Sans', sans-serif; background:{{ modeCompensationBg }}; color:{{ modeCompensationColor }}; transition:all .25s;">Field compensation</button>
+          <button onClick="{{ setLightningConventional }}" class="toggle-btn" style="padding:9px 18px; border-radius:100px; border:none; cursor:pointer; font-size:13px; font-weight:600; font-family:'Albert Sans', sans-serif; background:{{ modeConventionalBg }}; color:{{ modeConventionalColor }}; transition:all .25s;">Conventional rod</button>
+          <button onClick="{{ setLightningCompensation }}" class="toggle-btn" style="padding:9px 18px; border-radius:100px; border:none; cursor:pointer; font-size:13px; font-weight:600; font-family:'Albert Sans', sans-serif; background:{{ modeCompensationBg }}; color:{{ modeCompensationColor }}; transition:all .25s;">Field compensation</button>
         </div>
         <div style="display:flex; flex-direction:column; gap:14px; margin-bottom:28px;">
           <sc-for list="{{ lightningChips }}" as="c" hint-placeholder-count="5">
@@ -822,6 +822,8 @@ class Component extends DCLogic {
       openSolutions: () => this.setState({ solutionsOpen: true }), closeSolutions: () => this.setState({ solutionsOpen: false }),
       solutionsNav, mobileNavItems, smallTiles, lightningChips, lightningConventional, boltOpacity, rippleOpacity,
       setLightningMode: (m) => () => this.setState({ lightningMode: m }),
+      setLightningConventional: () => this.setState({ lightningMode: 'conventional' }),
+      setLightningCompensation: () => this.setState({ lightningMode: 'compensation' }),
       modeConventionalBg: lightningMode === 'conventional' ? '#FFFFFF' : 'transparent', modeConventionalColor: lightningMode === 'conventional' ? '#0C2530' : '#4F6A70',
       modeCompensationBg: lightningMode === 'compensation' ? '#FFFFFF' : 'transparent', modeCompensationColor: lightningMode === 'compensation' ? '#0C2530' : '#4F6A70',
       medicalGoals, faultActive, faultAnim: faultActive ? 'pulseLine 1s ease-in-out infinite' : 'none',
