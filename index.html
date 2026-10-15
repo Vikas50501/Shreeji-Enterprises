@@ -740,13 +740,21 @@ class Component extends DCLogic {
       { title: 'Security & Inspection Instruments', desc: 'Handheld chemical identification for enforcement agencies.', href: 'Security Inspection Instruments.dc.html', iconHtml: svg('scan', 34), caption: 'Photo: handheld analyser in use — 16:9' },
     ];
 
-    const lightningChips = [
+    const conventionalChips = [
+      { title: 'Absorbs direct strikes', desc: 'Provides a low-resistance path to earth for lightning current.' },
+      { title: 'Simple installation', desc: 'Straightforward to specify, install and inspect on any structure.' },
+      { title: 'Proven track record', desc: 'Decades of real-world use across industries and geographies.' },
+      { title: 'Protects a defined zone', desc: 'Coverage radius determined by rod height and protection angle.' },
+      { title: 'Low maintenance', desc: 'Periodic visual inspection and continuity check is all that is needed.' },
+    ];
+    const compensationChips = [
       { title: 'Passive operation', desc: 'No external power supply needed.' },
       { title: 'Continuous compensation', desc: 'Balances the surrounding electric field at all times.' },
       { title: 'Prevention first', desc: 'Aims to prevent the strike instead of absorbing its full current.' },
       { title: 'Gentler on equipment', desc: 'Designed to reduce destructive thermal, electrodynamic and electromagnetic effects.' },
       { title: 'Low maintenance', desc: 'Periodic inspection is all that is typically required.' },
     ];
+    const lightningChips = lightningConventional ? conventionalChips : compensationChips;
     const lightningConventional = lightningMode === 'conventional';
     const boltOpacity = lightningConventional ? (boltPhase < 10 ? 1 : (boltPhase < 40 ? 0 : 0)) : 0;
     const rippleOpacity = lightningConventional ? (boltPhase >= 10 && boltPhase < 40 ? 0.8 : 0) : 0;
