@@ -206,7 +206,7 @@
           <img src="./assets/Homepage%20images/about%20us.png" alt="Engineers reviewing an electrical panel on site" style="width:100%; height:100%; object-fit:cover; display:block;" />
         </div>
       </div>
-      <div class="reveal" ref="{{ reveal }}" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(160px,1fr)); gap:24px; border-top:1px solid #D6E4E1; padding-top:36px;">
+      <div class="reveal" ref="{{ reveal }}" style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px; border-top:1px solid #D6E4E1; padding-top:36px; text-align:center;">
         <sc-for list="{{ glanceStats }}" as="stat" hint-placeholder-count="3">
           <div>
             <div style="font-family:'Bricolage Grotesque', sans-serif; font-weight:700; font-size:clamp(2rem,3.6vw,2.6rem); color:#0C2530;">{{ stat.value }}</div>
