@@ -19,6 +19,11 @@
     a { color: #0A4FB0; text-decoration: none; }
     a:hover { color: #3A9E22; }
     * { box-sizing: border-box; }
+    section { text-align: center; }
+    section > div[style*="max-width"] { margin-left: auto !important; margin-right: auto !important; }
+    section .reveal div[style*="display:flex"][style*="flex-wrap:wrap"] { justify-content: center !important; }
+    section input, section textarea, section select { text-align: left; }
+    x-dc > div[style*="max-width:760px"] { text-align: center; }
     *:focus-visible { outline: 2px solid #3A9E22; outline-offset: 2px; }
     html:not(.js) .reveal { opacity: 1 !important; transform: none !important; }
     .reveal { opacity: 0; transform: translateY(26px); transition: opacity .75s cubic-bezier(.22,1,.36,1), transform .75s cubic-bezier(.22,1,.36,1); }

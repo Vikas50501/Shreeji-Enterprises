@@ -18,6 +18,11 @@
     a { color: #3A9E22; text-decoration: none; }
     a:hover { color: #0C9084; }
     * { box-sizing: border-box; }
+    section { text-align: center; }
+    section > div[style*="max-width"] { margin-left: auto !important; margin-right: auto !important; }
+    section .reveal div[style*="display:flex"][style*="flex-wrap:wrap"] { justify-content: center !important; }
+    section input, section textarea, section select { text-align: left; }
+    x-dc > div[style*="max-width:760px"] { text-align: center; }
     .btn-magnetic { transition: transform .25s, box-shadow .25s; }
     @media (hover: hover) { .btn-magnetic:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(10,79,176,.35); } }
   </style>

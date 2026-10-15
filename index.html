@@ -18,6 +18,11 @@
     a { color: #0A4FB0; text-decoration: none; }
     a:hover { color: #3A9E22; }
     * { box-sizing: border-box; }
+    section { text-align: center; }
+    section > div[style*="max-width"] { margin-left: auto !important; margin-right: auto !important; }
+    .cta-actions { justify-content: center !important; }
+    section input, section textarea, section select { text-align: left; }
+    x-dc > div[style*="max-width:760px"] { text-align: center; }
     *:focus-visible { outline: 2px solid #3A9E22; outline-offset: 2px; }
     html:not(.js) .reveal { opacity: 1 !important; transform: none !important; }
     .reveal { opacity: 0; transform: translateY(26px); transition: opacity .75s cubic-bezier(.22,1,.36,1), transform .75s cubic-bezier(.22,1,.36,1); }
@@ -157,7 +162,7 @@
           <span class="reveal-line" style="animation-delay:.25s;">&amp; Industrial Monitoring You Can </span><span class="reveal-line" style="animation-delay:.45s; background:linear-gradient(90deg,#3A9E22,#0C9084,#0A4FB0); -webkit-background-clip:text; background-clip:text; color:transparent;">Trust</span>
         </h1>
         <p style="font-size:clamp(1rem,1.3vw,1.1rem); line-height:1.7; color:rgba(255,255,255,.75); max-width:560px; margin:0 0 30px;">Shreeji Enterprises helps hospitals, factories, utilities and infrastructure owners protect people, property and uptime, with the right technology, honest advice and dependable support.</p>
-        <div style="display:flex; flex-wrap:wrap; gap:16px; margin-bottom:26px;">
+        <div class="cta-actions" style="display:flex; flex-wrap:wrap; gap:16px; margin-bottom:26px;">
           <a href="#cta" class="btn-magnetic" style="display:inline-block; padding:15px 30px; border-radius:100px; background:linear-gradient(90deg,#3A9E22,#0A4FB0); color:#fff; font-weight:600; font-size:15px;">Request a Quote</a>
           <a href="#solutions" class="btn-outline" style="display:inline-block; padding:15px 30px; border-radius:100px; border:1px solid rgba(255,255,255,.35); color:#fff; font-weight:600; font-size:15px;">Explore Solutions</a>
         </div>
