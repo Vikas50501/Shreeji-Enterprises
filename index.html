@@ -65,6 +65,10 @@
     .fi { padding: 14px 16px; border-radius: 12px; border: 1px solid #D6E4E1; font-size: 14.5px; width: 100%; font-family: 'Albert Sans', sans-serif; }
     .fi:focus { outline: 2px solid #3A9E22; outline-offset: 1px; }
     .fi.err { border-color: #C0392B; }
+    @media (max-width: 700px) {
+      .bento-grid { grid-template-columns: 1fr !important; }
+      .bento-grid > .span-2 { grid-column: span 1 !important; }
+    }
   </style>
 </helmet>
 
@@ -172,8 +176,8 @@
       </div>
 
       <div style="position:relative; max-width:420px; margin:0 auto;">
-        <div style="aspect-ratio:4/5; border-radius:28px; background:linear-gradient(150deg, rgba(58,158,34,.2), rgba(10,79,176,.26)); border:1px solid rgba(255,255,255,.18); display:flex; align-items:center; justify-content:center; padding:20px; text-align:center;">
-          <span style="font-size:12.5px; color:rgba(255,255,255,.6); font-style:italic;">Photo: hospital operating theatre or telecom tower at dusk — 4:5</span>
+        <div style="aspect-ratio:4/5; border-radius:28px; overflow:hidden; border:1px solid rgba(255,255,255,.18);">
+          <img src="./assets/Homepage%20images/HomePage.png" alt="Engineer reviewing electrical switchgear with lightning in the background" style="width:100%; height:100%; object-fit:cover; display:block;" />
         </div>
         <div style="position:absolute; left:-30px; bottom:40px; background:#FFFFFF; border-radius:16px; padding:14px 18px; box-shadow:0 20px 40px rgba(6,31,42,.25); max-width:200px; animation:driftChip 7s ease-in-out infinite;">
           <span style="font-size:13px; font-weight:600; color:#0C2530;">Protect people, property and uptime</span>
@@ -198,8 +202,8 @@
           <p style="font-size:16.5px; line-height:1.75; color:#4F6A70; margin:0 0 20px;">Shreeji Enterprises is a Maharashtra-based supplier of electrical safety, lightning protection and condition-monitoring solutions. For every customer we study the application, recommend the most suitable technology and supply it with the documentation and guidance needed for a safe, compliant installation.</p>
           <p style="font-size:16.5px; line-height:1.75; color:#4F6A70; margin:0;">From a hospital operating theatre to a telecom tower or a fuel pipeline, our work centres on one idea: protect what matters before something goes wrong.</p>
         </div>
-        <div style="aspect-ratio:1/1; border-radius:28px; background:linear-gradient(150deg, rgba(58,158,34,.14), rgba(10,79,176,.18)); border:1px solid #D6E4E1; display:flex; align-items:center; justify-content:center; padding:24px; text-align:center;">
-          <span style="font-size:13px; color:#4F6A70; font-style:italic;">Photo: engineers reviewing a panel on site — 1:1</span>
+        <div style="aspect-ratio:1/1; border-radius:28px; overflow:hidden; border:1px solid #D6E4E1;">
+          <img src="./assets/Homepage%20images/about%20us.png" alt="Engineers reviewing an electrical panel on site" style="width:100%; height:100%; object-fit:cover; display:block;" />
         </div>
       </div>
       <div class="reveal" ref="{{ reveal }}" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(160px,1fr)); gap:24px; border-top:1px solid #D6E4E1; padding-top:36px;">
@@ -236,20 +240,20 @@
   <section id="solutions" style="background:#F2F7F6; padding:clamp(70px,9vw,110px) clamp(20px,5vw,64px);">
     <div style="max-width:1280px; margin:0 auto;">
       <h2 class="reveal" ref="{{ reveal }}" style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(1.7rem,3.2vw,2.4rem); color:#0C2530; margin:0 0 44px; max-width:600px;">Seven solution areas, one dependable partner</h2>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:22px;">
-        <a href="Lightning Protection.dc.html" class="tile-hover reveal" ref="{{ reveal }}" style="grid-column:span 2; background:#FFFFFF; border:1px solid #D6E4E1; border-radius:24px; padding:32px; display:grid; grid-template-columns:1.2fr 1fr; gap:24px; min-height:280px;">
+      <div class="bento-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:22px;">
+        <a href="Lightning Protection.dc.html" class="tile-hover reveal span-2" ref="{{ reveal }}" style="grid-column:span 2; background:#FFFFFF; border:1px solid #D6E4E1; border-radius:24px; padding:32px; display:grid; grid-template-columns:1.2fr 1fr; gap:24px; min-height:280px;">
           <div style="display:flex; flex-direction:column; justify-content:space-between;">
             <svg width="36" height="36" viewBox="0 0 40 40" fill="none"><path d="M20 4l-13 18h9l-3 14 13-18h-9l3-14z" stroke="url(#brandGrad)" stroke-width="2" stroke-linejoin="round" fill="none"/></svg>
             <div><h3 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:21px; color:#0C2530; margin:0 0 10px;">Lightning Protection</h3><p style="font-size:14.5px; color:#4F6A70; line-height:1.6; margin:0 0 16px;">Prevent direct strikes and reduce surge and electromagnetic damage.</p><span style="font-size:14px; font-weight:600; color:#0A4FB0; display:inline-flex; align-items:center; gap:6px;">Explore <span class="tile-arrow"><svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M0 5h12M8 1l4 4-4 4" stroke="#0A4FB0" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></span></span></div>
           </div>
-          <div class="tile-img" style="border-radius:16px; background:linear-gradient(135deg, rgba(58,158,34,.16), rgba(10,79,176,.2)); display:flex; align-items:center; justify-content:center; padding:10px; text-align:center;"><span style="font-size:11px; color:#4F6A70; font-style:italic;">Photo: protector on a tower — 16:9</span></div>
+          <div class="tile-img" style="border-radius:16px; overflow:hidden;"><img src="./assets/Homepage%20images/Electric%20field%20compensation.png" alt="Lightning protector mounted on a rooftop" style="width:100%; height:100%; object-fit:cover; display:block;" /></div>
         </a>
-        <a href="Medical Safety.dc.html" class="tile-hover reveal" ref="{{ reveal }}" style="grid-column:span 2; background:#061F2A; border:1px solid #0E3240; border-radius:24px; padding:32px; display:grid; grid-template-columns:1.2fr 1fr; gap:24px; min-height:280px;">
+        <a href="Medical Safety.dc.html" class="tile-hover reveal span-2" ref="{{ reveal }}" style="grid-column:span 2; background:#061F2A; border:1px solid #0E3240; border-radius:24px; padding:32px; display:grid; grid-template-columns:1.2fr 1fr; gap:24px; min-height:280px;">
           <div style="display:flex; flex-direction:column; justify-content:space-between;">
             <svg width="36" height="36" viewBox="0 0 40 40" fill="none"><path d="M4 22h8l3-10 5 18 4-14 3 6h9" stroke="url(#brandGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
             <div><h3 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:21px; color:#FFFFFF; margin:0 0 10px;">Medical Safety &amp; Hospital Power</h3><p style="font-size:14.5px; color:rgba(255,255,255,.65); line-height:1.6; margin:0 0 16px;">Safe, uninterrupted power for operating theatres, ICUs and patient areas.</p><span style="font-size:14px; font-weight:600; color:#fff; display:inline-flex; align-items:center; gap:6px;">Explore <span class="tile-arrow"><svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M0 5h12M8 1l4 4-4 4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></span></span></div>
           </div>
-          <div class="tile-img" style="border-radius:16px; background:linear-gradient(135deg, rgba(58,158,34,.16), rgba(10,79,176,.22)); display:flex; align-items:center; justify-content:center; padding:10px; text-align:center;"><span style="font-size:11px; color:rgba(255,255,255,.5); font-style:italic;">Photo: isolated power panel — 16:9</span></div>
+          <div class="tile-img" style="border-radius:16px; overflow:hidden;"><img src="./assets/Homepage%20images/Electrical%20safety%20for%20patients%20and%20staff.png" alt="Operating theatre with isolated power and monitoring equipment" style="width:100%; height:100%; object-fit:cover; display:block;" /></div>
         </a>
         <sc-for list="{{ smallTiles }}" as="t" hint-placeholder-count="5">
           <a href="{{ t.href }}" class="tile-hover reveal" ref="{{ reveal }}" style="background:#FFFFFF; border:1px solid #D6E4E1; border-radius:24px; padding:28px; display:flex; flex-direction:column; justify-content:space-between; min-height:260px; gap:14px;">
@@ -311,7 +315,7 @@
             </svg>
           </sc-if>
         </div>
-        <div style="aspect-ratio:16/10; margin-top:8px; border-radius:20px; background:linear-gradient(150deg, rgba(58,158,34,.14), rgba(10,79,176,.18)); border:1px solid #D6E4E1; display:flex; align-items:center; justify-content:center; padding:16px; text-align:center;"><span style="font-size:12.5px; color:#4F6A70; font-style:italic;">Photo: tower or rooftop protector — 16:10</span></div>
+        <div style="aspect-ratio:16/10; margin-top:8px; border-radius:20px; overflow:hidden; border:1px solid #D6E4E1;"><img src="./assets/Homepage%20images/Electric%20field%20compensation.png" alt="Field compensation lightning protector installed on a rooftop" style="width:100%; height:100%; object-fit:cover; display:block;" /></div>
       </div>
     </div>
   </section>
@@ -343,7 +347,7 @@
         </sc-for>
       </div>
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:40px; align-items:center;">
-        <div style="aspect-ratio:16/9; border-radius:20px; background:linear-gradient(150deg, rgba(58,158,34,.16), rgba(10,79,176,.2)); border:1px solid #0E3240; display:flex; align-items:center; justify-content:center; padding:16px; text-align:center;"><span style="font-size:12.5px; color:rgba(255,255,255,.5); font-style:italic;">Photo: operating theatre with ceiling pendants — 16:9</span></div>
+        <div style="aspect-ratio:16/9; border-radius:20px; overflow:hidden; border:1px solid #0E3240;"><img src="./assets/Homepage%20images/Electrical%20safety%20for%20patients%20and%20staff.png" alt="Operating theatre with ceiling-mounted surgical lights and monitors" style="width:100%; height:100%; object-fit:cover; display:block;" /></div>
         <a href="Medical Safety.dc.html" class="btn-magnetic" style="justify-self:start; display:inline-block; padding:14px 28px; border-radius:100px; background:linear-gradient(90deg,#3A9E22,#0A4FB0); color:#fff; font-weight:600; font-size:14.5px;">Explore Medical Safety →</a>
       </div>
     </div>
@@ -378,8 +382,8 @@
   <section style="background:#061F2A; padding:clamp(70px,9vw,110px) clamp(20px,5vw,64px); margin:0 clamp(12px,2vw,24px); border-radius:32px;">
     <div class="reveal" ref="{{ reveal }}" style="max-width:1100px; margin:0 auto;">
       <h2 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(1.7rem,3.2vw,2.4rem); color:#FFFFFF; margin:0 0 44px; max-width:600px;">Why customers choose Shreeji Enterprises</h2>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:18px;">
-        <div class="glow-card" style="grid-column:span 2; border:1px solid rgba(255,255,255,.14); border-radius:20px; padding:30px; display:flex; flex-direction:column; gap:14px; background:rgba(255,255,255,.03);">
+      <div class="bento-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:18px;">
+        <div class="glow-card span-2" style="grid-column:span 2; border:1px solid rgba(255,255,255,.14); border-radius:20px; padding:30px; display:flex; flex-direction:column; gap:14px; background:rgba(255,255,255,.03);">
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="6" y="6" width="28" height="28" rx="8" stroke="url(#brandGrad)" stroke-width="2"/><path d="M14 20h12M20 14v12" stroke="url(#brandGrad)" stroke-width="2" stroke-linecap="round"/></svg>
           <h3 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:19px; color:#FFFFFF; margin:0;">One-stop range</h3>
           <p style="font-size:14.5px; line-height:1.65; color:rgba(255,255,255,.62); margin:0; max-width:460px;">Lightning protection, medical power, monitoring, instruments and hospital equipment from a single partner.</p>
@@ -406,7 +410,10 @@
     </sc-if>
     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(160px,1fr)); gap:16px; padding:0 clamp(20px,5vw,64px); margin-top:40px;">
       <sc-for list="{{ featuredSectors }}" as="f" hint-placeholder-count="4">
-        <a href="Industries.dc.html" class="tile-img tile-hover" style="aspect-ratio:3/4; border-radius:18px; background:linear-gradient(150deg, rgba(58,158,34,.16), rgba(10,79,176,.2)); border:1px solid #D6E4E1; display:flex; align-items:flex-end; padding:16px;"><span style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:14px; color:#0C2530;">{{ f }}</span></a>
+        <a href="Industries.dc.html" class="tile-img tile-hover" style="position:relative; aspect-ratio:3/4; border-radius:18px; overflow:hidden; border:1px solid #D6E4E1; display:flex; align-items:flex-end; padding:16px; background-image:url('{{ f.image }}'); background-size:cover; background-position:center;">
+          <div style="position:absolute; inset:0; background:linear-gradient(0deg, rgba(6,31,42,.75), rgba(6,31,42,0) 55%); z-index:1;"></div>
+          <span style="position:relative; z-index:2; font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:14px; color:#FFFFFF;">{{ f.label }}</span>
+        </a>
       </sc-for>
     </div>
   </section>
@@ -773,7 +780,12 @@ class Component extends DCLogic {
     ];
 
     const industries = ['Healthcare', 'Power Generation & Distribution', 'Renewable Energy', 'Oil & Gas', 'Aviation & Airports', 'Telecommunications', 'Marine & Offshore', 'Process Industry', 'Plant Engineering', 'Transport & Infrastructure', 'Electric Mobility', 'Government & Enforcement'];
-    const featuredSectors = ['Healthcare', 'Power', 'Telecom', 'Marine'];
+    const featuredSectors = [
+      { label: 'Healthcare', image: './assets/Homepage%20images/Healthcare%20Sector.png' },
+      { label: 'Power', image: './assets/Homepage%20images/Power%20Sector.png' },
+      { label: 'Telecom', image: './assets/Homepage%20images/Telecommunications%20Sector.png' },
+      { label: 'Marine', image: './assets/Homepage%20images/Marine%20and%20Offshore%20Sector.png' },
+    ];
 
     const processDescs = [
       'You describe your site, system and concern by phone, email or the enquiry form.',
