@@ -754,8 +754,8 @@ class Component extends DCLogic {
       { title: 'Gentler on equipment', desc: 'Designed to reduce destructive thermal, electrodynamic and electromagnetic effects.' },
       { title: 'Low maintenance', desc: 'Periodic inspection is all that is typically required.' },
     ];
-    const lightningChips = lightningConventional ? conventionalChips : compensationChips;
     const lightningConventional = lightningMode === 'conventional';
+    const lightningChips = lightningConventional ? conventionalChips : compensationChips;
     const boltOpacity = lightningConventional ? (boltPhase < 10 ? 1 : (boltPhase < 40 ? 0 : 0)) : 0;
     const rippleOpacity = lightningConventional ? (boltPhase >= 10 && boltPhase < 40 ? 0.8 : 0) : 0;
 
