@@ -54,7 +54,7 @@
           <div style="position:relative;" onMouseEnter="{{ openSolutions }}" onMouseLeave="{{ closeSolutions }}">
             <a href="Solutions Overview.dc.html" style="font-size:14px; font-weight:700; color:#0A4FB0; cursor:pointer; display:flex; align-items:center; gap:4px;">Solutions <span style="font-size:10px;">▾</span></a>
             <sc-if value="{{ solutionsOpen }}" hint-placeholder-val="{{ false }}">
-              <div style="position:absolute; top:28px; left:50%; transform:translateX(-50%); background:#FFFFFF; border:1px solid #D6E4E1; border-radius:20px; padding:14px; width:440px; box-shadow:0 24px 60px rgba(6,31,42,.16); z-index:50; display:grid; grid-template-columns:1fr 1fr; gap:4px;">
+              <div style="position:absolute; top:100%; left:50%; transform:translateX(-50%); background:#FFFFFF; border:1px solid #D6E4E1; border-radius:20px; padding:14px; width:440px; box-shadow:0 24px 60px rgba(6,31,42,.16); z-index:50; display:grid; grid-template-columns:1fr 1fr; gap:4px;">
                 <sc-for list="{{ solutionsNav }}" as="s" hint-placeholder-count="7">
                   <a href="{{ s.href }}" style="display:flex; gap:10px; align-items:flex-start; padding:10px; border-radius:12px;">
                     <span style="flex-shrink:0; width:32px; height:32px; border-radius:8px; background:linear-gradient(135deg, rgba(58,158,34,.22), rgba(10,79,176,.26));"></span>
