@@ -1,0 +1,1118 @@
+WEBSITE CONTENT BLUEPRINT
+Shreeji Enterprises
+Page-wise and section-wise, SEO-ready website copy
+Electrical Safety  |  Lightning Protection  |  Medical Power  |  Industrial Monitoring
+14 pages
+Home, About, Solutions overview, 7 solution pages, Industries, How We Work, FAQ and Contact.
+Every page SEO-ready
+URL, SEO title, meta description and focus keywords for each page.
+No duplicated content
+Each topic lives on exactly one page. Other pages link to it instead of repeating it.
+Prepared for: Shreeji Enterprises  ·  Vasai West, Maharashtra  ·  +91 87936 36312
+Website Structure &amp; Sitemap
+This document lists the pages of your website in navigation order. Under each page you will find the SEO details, followed by the website sections in the order they should appear, with the exact heading, copy and button text to use. Text in [square brackets] is a placeholder to complete before publishing.
+#
+Page
+URL
+Purpose
+1
+Home
+/
+First impression, key risks, solution overview, trust
+2
+About Us
+/about-us/
+Story, mission, values, leadership, business details
+3
+Solutions (Overview)
+/solutions/
+Helps visitors choose a solution by need
+4
+Lightning Protection
+/solutions/lightning-protection/
+Field-compensation protectors, marine, surge filters
+5
+Medical Safety &amp; Hospital Power
+/solutions/medical-safety-hospital-power/
+Isolated power, monitoring, testing, hospital equipment
+6
+Electrical Safety &amp; Insulation Monitoring
+/solutions/electrical-safety-insulation-monitoring/
+IT / TN / TT monitoring, RCM, NGR, power quality
+7
+Transformer, Switchgear &amp; Machine Monitoring
+/solutions/transformer-switchgear-monitoring/
+Asset condition monitoring, ester fluids
+8
+Testing, Measuring &amp; Cable Fault Instruments
+/solutions/testing-measuring-cable-fault-instruments/
+Instruments and cable fault location
+9
+Oil, Gas, Pipeline &amp; Aviation Fuel Systems
+/solutions/oil-gas-pipeline-aviation-fuel/
+Leak, theft, NDT, hydrant tightness
+10
+Security &amp; Inspection Instruments
+/solutions/security-inspection-instruments/
+Handheld chemical analyser (authorised agencies)
+11
+Industries We Serve
+/industries/
+Sector-wise relevance
+12
+How We Work, Quality &amp; Support
+/how-we-work/
+Process, standards, commitments
+13
+FAQ
+/faq/
+General questions; links to product FAQs
+14
+Contact &amp; Enquiry
+/contact/
+Details, enquiry form, map
+Global elements (on every page)
+Header
+Logo  |  Home  |  About  |  Solutions ▾  |  Industries  |  How We Work  |  FAQ  |  Contact  |  [Get a Quote] button  |  +91 87936 36312
+Solutions dropdown
+Lightning Protection · Medical Safety &amp; Hospital Power · Electrical Safety &amp; Insulation Monitoring · Transformer, Switchgear &amp; Machine Monitoring · Testing &amp; Cable Fault Instruments · Oil, Gas &amp; Aviation Fuel · Security &amp; Inspection
+Footer
+Quick links, solution links and contact block. Legal line: © 2026 Shreeji Enterprises. All rights reserved.  |  GSTIN 27APJPB5542G1Z1  |  Vasai West, Maharashtra  |  Phone: +91 87936 36312
+Floating buttons
+Call Now and WhatsApp (add number) pinned to the screen on mobile.
+Page 1  ·  Home
+Page URL
+/
+SEO title
+Electrical Safety &amp; Lightning Protection | Shreeji
+Meta description
+Shreeji Enterprises supplies lightning protection, hospital isolated power, insulation monitoring and asset monitoring solutions across India. Get a quote.
+Focus keywords
+electrical safety solutions India, lightning protection supplier Maharashtra, medical isolation panel, insulation monitoring
+SECTION 1  ·  HERO
+HERO BANNER  ·  H1
+Electrical Safety, Lightning Protection &amp; Industrial Monitoring You Can Trust
+Shreeji Enterprises helps hospitals, factories, utilities and infrastructure owners protect people, property and uptime, with the right technology, honest advice and dependable support.
+  Request a Quote  
+    
+  Explore Solutions  
+    
+Based in Vasai, Maharashtra  ·  Supplying across India  ·  GST-registered business
+SECTION 2  ·  INTRODUCTION
+Power should move progress forward, never put it at risk
+Shreeji Enterprises is a Maharashtra-based supplier of electrical safety, lightning protection and condition-monitoring solutions. For every customer we study the application, recommend the most suitable technology and supply it with the documentation and guidance needed for a safe, compliant installation.
+From a hospital operating theatre to a telecom tower or a fuel pipeline, our work centres on one idea: 
+protect what matters before something goes wrong.
+
+SECTION 3  ·  THE HIDDEN RISKS
+Three risks you rarely see coming
+The fault you cannot see
+An insulation fault can grow silently into a shutdown, a fire or a danger to life, long before anyone notices.
+The strike you cannot stop
+A lightning surge can destroy electronics in a fraction of a second, even when the building itself is untouched.
+The second you cannot afford
+In a hospital, a power interruption in an operating theatre can put a patient at risk.
+
+Prevention costs a fraction of the loss it avoids.
+ Early warning, continuous monitoring and properly specified protection turn unpredictable hazards into planned maintenance. That is the value we bring to every project.
+SECTION 4  ·  OUR SOLUTIONS
+Seven solution areas, one dependable partner
+Lightning Protection
+Prevent direct strikes and reduce surge and electromagnetic damage.
+Explore →
+Medical Safety &amp; Hospital Power
+Safe, uninterrupted power for operating theatres, ICUs and patient areas.
+Explore →
+Electrical Safety &amp; Insulation Monitoring
+Early warning of insulation faults and leakage currents.
+Explore →
+Transformer, Switchgear &amp; Machine Monitoring
+Online condition monitoring for critical electrical assets.
+Explore →
+Testing, Measuring &amp; Cable Fault Instruments
+Tools for commissioning, inspection and fault finding.
+Explore →
+Oil, Gas, Pipeline &amp; Aviation Fuel Systems
+Leak, theft and tightness monitoring for fuel infrastructure.
+Explore →
+Security &amp; Inspection Instruments
+Handheld chemical identification for enforcement agencies.
+Explore →
+
+SECTION 5  ·  WHY CHOOSE US
+Why customers choose Shreeji Enterprises
+One-stop range
+Lightning protection, medical power, monitoring, instruments and hospital equipment from a single partner.
+Application-led advice
+We begin with your risk and site conditions, not with a product catalogue.
+Healthcare focus
+Specialised knowledge of isolated power and critical-care requirements.
+Preventive mindset
+Early-warning technologies that reduce downtime, fire risk and repair cost.
+Clear communication
+Plain-language explanations for managers and detailed data for engineers.
+Transparent business
+GST-registered, with proper documentation and invoicing.
+Responsive support
+A direct line to our team for questions before and after purchase.
+
+
+SECTION 6  ·  INDUSTRIES STRIP
+Trusted across demanding sectors
+Healthcare  ·  Power Generation &amp; Distribution  ·  Renewable Energy  ·  Oil &amp; Gas  ·  Aviation &amp; Airports  ·  Telecommunications  ·  Marine &amp; Offshore  ·  Process Industry  ·  Plant Engineering  ·  Transport &amp; Infrastructure  ·  Electric Mobility  ·  Government &amp; Enforcement
+Design note: show as a row of icon chips, each linking to the Industries page. Keep names only on Home; the detail lives on the Industries page.
+SECTION 7  ·  PROCESS TEASER
+From first enquiry to after-sales care
+A clear, seven-step journey with honest guidance at every stage. [Short link line: See how we work →]
+SECTION 8  ·  CALL TO ACTION
+Tell us about your site. We will help you choose a safe, practical solution.
+Designing a new hospital theatre, protecting a tower or monitoring a substation? Talk to our team today.
+  Request a Quote  
+    
+  Call +91 87936 36312  
+    
+Page 2  ·  About Us
+Page URL
+/about-us/
+SEO title
+About Shreeji Enterprises | Electrical Safety Partner, Vasai
+Meta description
+Meet Shreeji Enterprises, a Vasai-based electrical safety supplier led by Mrs. Dimple Hitesh Baxi, built on honest advice and dependable service.
+Focus keywords
+about Shreeji Enterprises, electrical safety company Vasai, lightning protection company Maharashtra
+SECTION 1  ·  HERO
+HERO BANNER  ·  H1
+About Shreeji Enterprises: Your Partner in Electrical Safety
+Honest advice. Dependable products. Responsive service.
+  Talk to Our Team  
+    
+  View Solutions  
+    
+SECTION 2  ·  OUR STORY
+Built on one simple idea
+Electricity should power progress without putting people, buildings or critical equipment at risk. That idea shapes everything Shreeji Enterprises does.
+We are a Maharashtra-based supplier of electrical safety, lightning protection and industrial monitoring solutions. Our customers include hospitals, factories, power utilities, telecom operators, oil and gas facilities, marine operators and infrastructure builders.
+For each customer we study the application, recommend the most suitable technology and supply it with the documentation and guidance needed for a safe, compliant installation.
+SECTION 3  ·  AT A GLANCE
+Core focus
+Electrical safety, lightning protection, medical-location power systems and condition monitoring.
+Customers
+Hospitals, industries, utilities, telecom, marine, oil &amp; gas, infrastructure and aviation.
+Base
+Vasai West, Maharashtra, serving customers across India.
+SECTION 4  ·  MISSION &amp; VISION
+Our Mission
+To protect people, property and productivity by supplying reliable electrical safety and protection technology, backed by clear guidance and dependable service.
+Our Vision
+To become a trusted one-stop partner for electrical safety, lightning protection and condition monitoring across the power, healthcare and industrial sectors.
+What we are working towards
+Offer a complete range so customers can meet most protection and monitoring needs through one supplier.
+Recommend solutions that fit the real conditions of each site, not a one-size-fits-all product.
+Build long-term relationships through transparency and consistent after-sales care.
+SECTION 5  ·  OUR VALUES
+The principles behind every recommendation
+Integrity
+We state clearly what a product can and cannot do, and never oversell.
+Quality
+We choose products and partners for long-term reliability, not short-term price.
+Transparency
+Clear quotations, clear documentation and open communication at every step.
+Customer focus
+Decisions start with the customer’s application, risk and budget.
+Safety first
+Where life and critical assets are involved, we do not compromise.
+Continuous improvement
+We keep learning about new technologies and standards so our advice stays current.
+SECTION 6  ·  LEADERSHIP
+Led with a simple approach
+Shreeji Enterprises operates as a proprietorship under the leadership of its proprietor, 
+Mrs. Dimple Hitesh Baxi
+. Our approach is simple: honest advice, dependable products and responsive service.
+[Optional: add proprietor photo and a 2–3 line personal message to build trust.]
+SECTION 7  ·  BUSINESS DETAILS
+Registered and accountable
+Detail
+Information
+Business name
+Shreeji Enterprises
+Proprietor
+Dimple Hitesh Baxi
+Constitution
+Proprietorship (Regular GST registration)
+GSTIN
+27APJPB5542G1Z1
+Registered office
+Vasai West, Vasai Virar, Palghar, Maharashtra – 401202
+SECTION 8  ·  CALL TO ACTION
+Let’s protect what matters to you
+Share your project and we will recommend a solution that fits your site, risk and budget.
+  Request a Quote  
+    
+  Contact Us  
+    
+Page 3  ·  Solutions (Overview)
+Page URL
+/solutions/
+SEO title
+Electrical Safety &amp; Monitoring Solutions | Shreeji
+Meta description
+Find the right electrical safety, lightning protection, hospital power or condition monitoring solution for your site. Expert guidance from Shreeji Enterprises.
+Focus keywords
+electrical safety solutions, industrial monitoring solutions, protection solutions India
+SECTION 1  ·  HERO
+HERO BANNER  ·  H1
+Solutions Built Around Your Risk, Not Our Catalogue
+Tell us what you need to protect. We will point you to the technology that fits your site, your standards and your budget.
+  Describe Your Requirement  
+    
+  Call +91 87936 36312  
+    
+SECTION 2  ·  FIND YOUR SOLUTION
+Start with what you need to achieve
+If you need to…
+Explore
+Protect a tower, plant, building or vessel from lightning and surges
+Lightning Protection →
+Keep operating theatres and ICUs powered safely and without interruption
+Medical Safety &amp; Hospital Power →
+Detect insulation faults and leakage currents early
+Electrical Safety &amp; Insulation Monitoring →
+Track the health of transformers, switchgear, motors and generators
+Transformer, Switchgear &amp; Machine Monitoring →
+Commission, inspect and locate faults in cables and installations
+Testing, Measuring &amp; Cable Fault Instruments →
+Detect leaks, theft and tightness problems in fuel infrastructure
+Oil, Gas, Pipeline &amp; Aviation Fuel Systems →
+Identify illicit substances and explosives in the field (authorised agencies)
+Security &amp; Inspection Instruments →
+SECTION 3  ·  WHAT COMES WITH EVERY SOLUTION
+More than a product: a complete service
+
+Application study
+ to understand your site, system and risk.
+
+Product selection
+ matched to real operating conditions.
+
+Supply
+ of genuine products with datasheets.
+
+Documentation and guidance
+ for a safe, compliant installation.
+
+Support
+ before and after purchase.
+SECTION 4  ·  CALL TO ACTION
+Not sure where to start?
+Describe your site and your concern. We will recommend the right solution and explain why.
+  Send an Enquiry  
+    
+  Call +91 87936 36312  
+    
+Page 4  ·  Lightning Protection
+Page URL
+/solutions/lightning-protection/
+SEO title
+Lightning Protection Systems &amp; Field Compensation | Shreeji
+Meta description
+Passive field-compensation lightning protectors, marine systems, ground surge filters and connectors for towers, plants, vessels and buildings in India.
+Focus keywords
+lightning protection system, field compensation lightning protector, marine lightning protection, ground surge filter, telecom tower lightning protection
+SECTION 1  ·  HERO
+HERO BANNER  ·  H1
+Advanced Lightning Protection for Structures, Sites and Vessels
+Passive electric field compensation technology, designed to reduce the chance of a strike and the surge damage that follows.
+  Request a Design Review  
+    
+  View Product Range  
+    
+SECTION 2  ·  THE CHALLENGE
+A conventional rod protects the structure. What protects the equipment?
+A lightning strike delivers an enormous, extremely fast burst of current. A conventional lightning rod attracts that strike and carries the current to earth, which protects the structure from direct fire damage. But the surge and electromagnetic pulse that accompany the strike can still destroy the electrical and electronic equipment connected to it.
+Telecom towers, weather radars, wind turbines, chemical plants, ships and data-rich buildings are especially exposed, because their equipment is both valuable and sensitive.
+SECTION 3  ·  OUR APPROACH
+Electric field compensation: preventing the strike, not just surviving it
+Instead of waiting for a strike, a field-compensation protector continuously balances the electric charge in the air around it. By gathering charge from its surroundings and slowly returning a very small current to earth, it prevents the build-up that would otherwise launch an upward leader toward the clouds. The result is a structure that is far less likely to be struck in the first place.
+Passive operation
+No external power supply needed.
+Continuous compensation
+Balances the surrounding electric field at all times.
+Prevention first
+Aims to prevent the strike instead of absorbing its full current.
+Gentler on equipment
+Designed to reduce destructive thermal, electrodynamic and electromagnetic effects.
+Low maintenance
+Periodic inspection is all that is typically required.
+
+Coverage depends on the model, mounting height and local regulations. Typical protection radii range from about 25 m to 120 m. As a general rule, devices are mounted several metres above the highest point to be protected. Detailed design is provided for each project.
+SECTION 4  ·  PRODUCT RANGE: FIELD-COMPENSATION LIGHTNING PROTECTORS
+Choose the protector that fits your structure
+Compact Protector for Small Structures
+A light, compact unit created for small structures that fall within its protection radius.
+Small footprint and light weight for easy mounting
+Galvanised metallic construction
+Passive, power-free operation
+Typical applications:  
+small storage units, telecom poles and towers, medium and high voltage power lines, traffic lights, road cameras, small radars, guard posts
+Standard Protector for Residential &amp; Light Commercial Use
+A general-purpose model for ground-based structures of moderate size.
+Protects residences, small buildings and warehouses
+Galvanised metallic construction
+Typical applications:  
+homes, small commercial buildings, godowns, farmhouses
+High-Capacity Protector (120 m Class)
+Greater charge-compensation capability for large facilities and demanding sites, with coverage up to the 120 m class where regulations permit.
+Suited to large complexes and high-value assets
+A strong choice for exposed or lightning-prone locations
+Typical applications:  
+large buildings and complexes, mining sites, electrical stations, vessels, industrial plants
+High-Temperature Version
+Engineered for installations where heat is a constant factor, tolerating temperatures up to about 400 °C.
+Suitable for hot flue and exhaust environments
+Typical applications:  
+chimneys, furnaces, process industries
+Corrosion-Resistant Stainless Version
+Built from corrosion-resistant stainless steel for chemically aggressive and salt-laden atmospheres.
+Resists rust and chemical attack
+Suitable for coastal and offshore conditions
+Typical applications:  
+chemical plants, refineries, coastal and marine sites
+High-Vibration / Anti-Fall Version
+A reinforced design with additional fixing to prevent the unit from dislodging on structures that vibrate or sway.
+Improved retention under vibration
+Same compensation performance as the 120 m class
+Typical applications:  
+drilling derricks, towers, rotating or vibrating structures
+Advanced Material Version
+A premium model that uses advanced carbon-based material properties for specialised applications.
+Designed for special-duty and defence installations
+Typical applications:  
+specialised and strategic installations
+Twin High-Load Version
+A high-performance unit designed for extreme electric field conditions and high electrical load environments. It compensates strong fields quickly and also helps reduce the intensity of magnetic fields.
+Fast compensation under severe conditions
+Laboratory-tested design concept
+Typical applications:  
+high-load industrial environments, extreme-exposure sites
+SECTION 5  ·  MARINE PROTECTION
+Marine Lightning Protection System
+A passive system for yachts, ships and offshore vessels. It collects electrostatic charge and routes it away, balancing the electric field around the vessel so that the upward leader that triggers a strike does not form. Vessels are protected against both direct strikes and the electromagnetic pulses that can damage navigation and communication electronics.
+Protection of mast, hull fittings and onboard electronics
+Designed for the salt and humidity of the marine environment
+Used together with a ground filter and surge protective devices for complete coverage
+
+Typical applications:
+ yachts, commercial vessels, offshore platforms, ports
+SECTION 6  ·  SURGE PROTECTION COMPANIONS
+Defend against the effects you cannot see
+High-Frequency Ground Surge Filter
+A high-reactance filter that blocks high-frequency surges travelling through the earth after a lightning discharge, an electromagnetic pulse or another source. It protects the equipment inside the structure from indirect effects.
+Recommended for all types of structure
+Works alongside the lightning protector as part of a complete system
+Typical applications:  
+telecom sites, control rooms, data centres, vessels, industrial plants
+Down-Conductor Surge Connector
+A protective element fitted on the down-conductor cable that minimises high-frequency induced surges generated by atmospheric discharge, electromagnetic pulses and other causes.
+Recommended where exposure to such surges is moderate
+Typical applications:  
+general structures served by a down-conductor
+SECTION 7  ·  COMPLETE PROTECTION PHILOSOPHY
+Two risks, one complete system
+Protecting a structure well means addressing the direct strike and the indirect effects of surges and electromagnetic pulses together. Our recommended system combines four layers:
+1
+Lightning protector
+Direct protection for the structure.
+2
+Ground filter and down-conductor connector
+Control of high-frequency surges.
+3
+Correct earthing and equipotential bonding
+A safe path and stable reference for fault energy.
+4
+Surge protective devices
+Protection on power and data lines.
+SECTION 8  ·  FREQUENTLY ASKED QUESTIONS
+Q.  How is field-compensation lightning protection different from a conventional lightning rod?
+A conventional rod attracts the strike and carries the full current to earth, which can still damage connected electronics. A field-compensation device continuously balances the electric field around it, aiming to prevent the upward leader that leads to a strike. It is passive and needs no power.
+Q.  Can any system protect a structure 100%?
+No lightning protection system can honestly promise absolute protection. Performance depends on correct design, mounting height, earthing and the surrounding structures. We provide a design review for each project.
+Q.  Do I also need surge protection?
+Yes. Direct protection should be combined with ground filtering, proper earthing and surge protective devices on power and data lines to handle indirect effects.
+SECTION 9  ·  CALL TO ACTION
+Request a lightning protection design review
+Share your structure, location and equipment. We will recommend the right protector and a complete protection scheme.
+  Request a Design Review  
+    
+  Call +91 87936 36312  
+    
+Page 5  ·  Medical Safety &amp; Hospital Power
+Page URL
+/solutions/medical-safety-hospital-power/
+SEO title
+Medical Isolation Panels &amp; Hospital Power Safety | Shreeji
+Meta description
+IEC 60364-7-710 solutions: medical isolation panels, IT insulation monitors, alarm panels, safety testers and hospital equipment for OTs and ICUs.
+Focus keywords
+medical isolation panel, isolated power panel hospital, IEC 60364-7-710, operating theatre power supply, ICU electrical safety, medical IT insulation monitor
+SECTION 1  ·  HERO
+HERO BANNER  ·  H1
+Safe, Uninterrupted Power for Operating Theatres, ICUs and Patient Care
+A complete electrical safety system for medical locations: isolated power, insulation monitoring, alarms, testing and hospital equipment working as one.
+  Request a Hospital Solution  
+    
+  Talk to Our Team  
+    
+SECTION 2  ·  WHY IT MATTERS
+Electrical safety for patients and staff
+In a hospital, patient care comes first, and a power failure at the wrong moment can endanger treatment, diagnosis and life itself. As the number of mains-powered medical devices grows, so do the demands on the electrical installation, especially in operating theatres, cardiac catheterisation rooms and intensive care units.
+The international standard 
+IEC 60364-7-710
+ sets requirements for electrical installations in medically used rooms. Meeting it means achieving three things together:
+High availability
+Electrical supply continues after a first fault.
+Protection against shock
+The right protective measures, particularly under fault conditions.
+Reliable equipment safety
+No unexpected loss of supply to life-supporting devices.
+SECTION 3  ·  ISOLATED POWER SYSTEMS
+The heart of a safe critical-care power system
+Medical Isolation Panel (Isolated Power Panel)
+Supplies isolated power from an isolating transformer and continuously monitors insulation. If an insulation fault develops, the supply keeps running and staff receive an immediate alarm, giving time to correct the fault without interrupting treatment.
+Continuous insulation monitoring with audible and visual alarms
+Isolation transformer, protection devices and monitoring in one panel
+Prefabricated and project-specific configurations
+Designed for compliance with medical-location electrical requirements
+Typical applications:  
+ICUs, operating theatres, anaesthetic rooms, cardiac cath labs, neonatal rooms
+Automatic Changeover Unit
+Compact switching equipment that transfers critical loads to a standby source automatically if the main supply fails, keeping life-supporting equipment running.
+Available as compact single units for smaller installations
+Part of larger isolated power systems
+Typical applications:  
+hospital critical loads, essential services
+Transformer Cabinet for Medical Locations
+Enclosed isolating transformer cabinets built specifically for medical rooms, which contain far more components than typical industrial equipment.
+Matched to the isolated power panel
+Standard-compliant, safe, reliable and compact
+Typical applications:  
+operating theatre suites, critical care wings
+SECTION 4  ·  MONITORING, ALARM &amp; CONTROL
+Status of the power system, visible at a glance
+Medical IT Insulation Monitoring Device
+Made for the isolated (IT) power systems of medical rooms. It watches insulation resistance continuously and warns when it drops below the set value.
+Models with an integrated locating-current injector, so the faulty circuit can be traced during operation
+Detects insulation deterioration at an early stage
+Suitable for single and multi-room medical installations
+Typical applications:  
+operating theatres, ICUs, treatment rooms
+Alarm Indicator &amp; Operator Panel
+Indicating, reporting and operating panels placed in the theatre or nurses’ station so staff see the status of the power system at a glance.
+Clear visual and audible signalling
+Communication of status to building management systems
+Typical applications:  
+operating theatres, nurse stations
+Touch Control Panel
+A modern touch-operated control panel that meets the needs of today’s medical locations and also suits industrial and purpose-built buildings.
+Intuitive touch operation
+Flexible for medical, industrial and commercial use
+Typical applications:  
+medical suites, process rooms, purpose-built buildings
+Main Distribution Board for Hospitals
+Well-engineered distribution that supports the reliable supply of critical medical areas.
+Designed around hospital power continuity requirements
+Typical applications:  
+hospital main electrical rooms
+SECTION 5  ·  TESTING &amp; RELIABILITY
+Verify safety. Maintain confidence.
+Electrical Safety Tester for Medical Equipment
+A fully automated safety tester that compares measured values with stored reference values according to the applicable standards. Users can define their own test procedures, and device history and logbook records can be managed with free PC software.
+Automatic comparison against reference values
+User-defined test sequences
+Device logbook and protocol management
+For mobile service visits and for manufacturers of medical equipment
+Typical applications:  
+biomedical engineering departments, equipment service teams, hospital maintenance
+Airborne Particle Counter
+An instrument for counting airborne particles to verify air cleanliness in controlled areas.
+Supports clean-room and theatre air-quality checks
+Typical applications:  
+operating theatres, pharma and clean rooms, laboratories
+Transformer reliability matters greatly in hospitals. See our fire-safe ester transformer fluids on the Transformer, Switchgear &amp; Machine Monitoring page.
+SECTION 6  ·  HOSPITAL EQUIPMENT
+Equipment designed around the point of care
+Product
+Description
+Operating, Minor Procedure &amp; Examination Lights
+High-quality LED lighting for every procedure, from major surgery to routine examination. Accurate, consistent colour rendering helps reduce eye strain. Low-energy LED technology generates less heat, uses less power and lasts longer. Selected designs help optimise airflow in the theatre.
+Clinical Pendants
+Modular ceiling-mounted supply units that carry electrical sockets, medical gases and data outlets to the point of care. Arm options and configurations are customised to hospital specifications, giving nurses safer, more ergonomic access to equipment and reducing hazards and infection risk.
+IV Poles &amp; Accessories
+Fittings for infusion and bedside equipment that integrate with pendant systems.
+Operating Tables
+Ergonomic, versatile and modular surgical tables for general and specialised surgery, highly adjustable and supplied with a broad range of accessories.
+Patient Trolleys
+Robust clinical trolleys for safe and comfortable patient transfer.
+SECTION 7  ·  COMPLETE SOLUTION
+One scheme instead of unrelated components
+Because medical locations need every element to work together, we can propose a complete scheme covering operating theatres, critical care units, the main distribution board, safety testing and periodic service. This approach is far easier to manage and maintain than a collection of unrelated parts.
+SECTION 8  ·  FREQUENTLY ASKED QUESTIONS
+Q.  What is a medical isolation panel?
+It is a panel that supplies isolated power to critical medical rooms and continuously monitors insulation. When a first fault occurs, the supply stays on and staff are alerted, so treatment is not interrupted.
+Q.  Which rooms need isolated power?
+Rooms where a power interruption or shock hazard could endanger a patient, such as operating theatres, ICUs, cardiac catheterisation rooms, anaesthetic rooms and neonatal rooms. Your hospital consultant and local rules decide the exact requirement.
+SECTION 9  ·  CALL TO ACTION
+Planning a new theatre or upgrading a critical care unit?
+Share your room list and requirements. We will propose a complete, standards-aware power safety scheme.
+  Request a Hospital Solution  
+    
+  Call +91 87936 36312  
+    
+Page 6  ·  Electrical Safety &amp; Insulation Monitoring
+Page URL
+/solutions/electrical-safety-insulation-monitoring/
+SEO title
+Insulation &amp; Residual Current Monitoring | Shreeji
+Meta description
+Insulation monitoring devices, fault locators, RCM, NGR monitors, power quality meters and gateways for IT, TN and TT systems. Enquire with Shreeji.
+Focus keywords
+insulation monitoring device, residual current monitoring, insulation fault location, NGR monitoring, power quality analyser, EV charging safety
+SECTION 1  ·  HERO
+HERO BANNER  ·  H1
+See Electrical Faults Before They Become Failures
+Insulation monitoring, residual current monitoring and power measurement that give early warning, so you can plan the fix instead of reacting to the shutdown.
+  Request a Monitoring Solution  
+    
+  Browse Device Types  
+    
+SECTION 2  ·  INTRODUCTION
+Two types of electrical system. Two ways of monitoring.
+Electrical systems are generally either 
+earthed
+ (TN and TT systems) or 
+unearthed
+ (IT systems). Each calls for its own monitoring method. Our range covers both, together with the measuring and communication components that tie them into a single view of system health.
+SECTION 3  ·  INSULATION MONITORING FOR UNEARTHED (IT) SYSTEMS
+Continuous insulation monitoring
+An insulation monitoring device continuously measures the insulation resistance of an unearthed system and raises an alarm if it falls below a set value. It is connected between the system and the protective earth conductor; a small measuring signal is applied and evaluated by the measuring circuit. Deterioration is detected early and reliably, long before it causes a shutdown or hazard.
+Device type
+Application
+Large industrial &amp; inverter systems
+Plants with drives and inverters, including variants for coupled systems and fault location
+High-resistance measurement
+Very high insulation values (up to gigaohm range) and long parallel cable runs
+AC, DC and AC/DC main circuits
+Industrial supply, control circuits and mixed systems
+Control-circuit monitors
+Unearthed AC and AC/DC control circuits
+Medium-voltage combinations
+Coupling-device based monitoring for medium-voltage networks
+Offline monitors
+De-energised loads (earth-fault lock-out) in TN, TT and IT systems
+Photovoltaic systems
+Solar plants up to 1,500 V DC
+Railway applications
+Rolling stock and rail power supplies
+Mobile generators
+Portable and standby generator sets
+Energy storage
+Battery energy storage systems
+Special platforms
+Mobile insulated work platforms in hydrogen electrolysers and chemical plants
+Selection can be narrowed by circuit type, voltage system, coupled systems, mounting method, fault-location capability and communication interfaces such as web server, Modbus, Ethernet and RS-485. For hospital IT systems, see Medical Safety &amp; Hospital Power.
+SECTION 4  ·  DETECT &amp; LOCATE FAULTS
+From early warning to exact location
+Insulation Fault Location
+Fault locators work with an insulation monitoring device in unearthed systems. They use measuring current transformers to detect the test-current signal and trace it to the faulty feeder. The fault can be found in a short time and while the plant keeps running, avoiding a shutdown just to search for the problem.
+Residual Current Monitoring (RCM)
+In earthed systems (TN and TT), residual current monitors measure the sum of all conductors except the protective earth through measuring current transformers. They notify the user before the shutdown threshold of the residual current device is reached, so insulation deterioration is spotted early and unexpected trips are avoided.
+Neutral Earthing Resistor (NGR) Monitoring
+A neutral earthing resistor limits the maximum fault current to avoid damage and danger from earth faults, while still allowing protective relays to operate correctly. NGR monitors measure voltage, current, continuity of the NGR connection and phase-to-ground voltage. An early change in the NGR value lets maintenance be planned and reveals hazards that were previously unknown.
+SECTION 5  ·  MEASURE &amp; UNDERSTAND YOUR POWER
+Transparency across the whole installation
+Power Quality and Energy Measurement
+Universal measuring devices and power analysers record all relevant electrical quantities: currents, voltages, energy consumption, power and individual harmonic components for assessing voltage quality. Adjustable limits trigger relay outputs, and all recorded data can be read over bus systems or a web browser. We also supply high-accuracy power quality meters with phasor measurement capability for real-time data, helping reduce energy cost and carbon footprint.
+Measuring and Monitoring Relays
+Relays for monitoring overvoltage, undervoltage, frequency, unbalance, phase sequence, phase failure and loop monitoring. Special versions are available for extended temperature ranges, sector-specific standards, compact designs and country-specific profiles.
+Communication and Gateways
+Gateways and communication modules enable fast exchange of information between devices and let you read data and system status through a web server. A whole installation can be monitored at a glance, with visual presentation that makes trends easy to spot. Several measuring points can be linked into one structure for condition monitoring and evaluation software.
+SECTION 6  ·  COMPLETE THE SYSTEM
+Switching, sensing and supporting components
+Switching Equipment and Current Transformers
+Switching equipment includes automatic changeover devices and complete isolated power panels, available ex-stock or built to individual requirements. Current transformers for load currents and residual currents come in a wide range of designs, suitable for new installations and retrofitting. AC/DC-sensitive transformers detect both AC and DC currents over a range of frequencies.
+System Components
+Accessories that complete a monitoring system: coupling devices for insulation monitoring at high voltage, analogue measuring instruments, power supply units, interface converters and interface repeaters.
+SECTION 7  ·  NEXT-GENERATION APPLICATIONS
+Safety for modern electrical infrastructure
+EV Charging Safety
+Residual current monitoring, insulation monitoring and AC charging electronics for electric vehicle charging points, helping charger operators meet safety requirements and protect users.
+Condition Monitoring of Electrical Panels
+For PCC, MCC, DC distribution boards and switchgear panels, we provide online insulation resistance and leakage current monitoring with automatic fault location. Online temperature monitoring of cable terminations and busbars supports fire prevention. Related offerings include NGR monitoring relays for NGR panels and industrial batteries.
+SECTION 8  ·  FREQUENTLY ASKED QUESTIONS
+Q.  What is insulation monitoring and why is it needed?
+It continuously measures the insulation resistance of a power system and warns you when it falls, so a developing fault can be fixed before it causes a shutdown, a fire or an electric shock.
+Q.  What is the difference between insulation monitoring and residual current monitoring?
+Insulation monitoring is used on unearthed (IT) systems; residual current monitoring is used on earthed (TN and TT) systems. Both give early warning, but they work differently.
+SECTION 9  ·  CALL TO ACTION
+Tell us your system type and we will recommend the right monitoring
+IT, TN or TT? Industrial, solar, rail or EV charging? Share your details and we will suggest the right devices.
+  Request a Monitoring Solution  
+    
+  Call +91 87936 36312  
+    
+Page 7  ·  Transformer, Switchgear &amp; Machine Monitoring
+Page URL
+/solutions/transformer-switchgear-monitoring/
+SEO title
+Transformer &amp; Switchgear Condition Monitoring | Shreeji
+Meta description
+Online DGA, partial discharge, bushing, breaker and SF6 monitoring for transformers, switchgear, motors and generators, plus ester transformer fluids.
+Focus keywords
+transformer condition monitoring, online DGA, partial discharge monitoring, switchgear monitoring, motor condition monitoring, ester transformer fluid
+SECTION 1  ·  HERO
+HERO BANNER  ·  H1
+Know the Health of Your Critical Assets Before Failure Strikes
+Online condition monitoring for transformers, switchgear, motors and generators, so maintenance happens at the right time: neither too early nor too late.
+  Request a Monitoring Proposal  
+    
+  Explore Asset Types  
+    
+SECTION 2  ·  WHY CONDITION MONITORING
+Unplanned failure is the costliest kind
+Unplanned failure of a transformer, switchgear or large motor can be very costly. Online condition monitoring tracks the health of these assets continuously, turning hidden deterioration into clear, early signals you can act on.
+SECTION 3  ·  TRANSFORMERS
+Transformer online condition monitoring
+A complete solution for transformer health, brought together on a single platform:
+
+Online dissolved gas analyser (DGA)
+ to detect developing internal faults
+
+Smart breather
+ to manage moisture ingress
+
+Online partial discharge monitoring
+
+
+Online bushing monitoring
+
+
+Moisture, temperature and pressure monitoring
+
+
+Typical applications:
+ power utilities, industrial substations, renewable plants
+SECTION 4  ·  SWITCHGEAR &amp; GIS
+Switchgear and GIS condition monitoring
+Online fixed partial discharge monitoring using UHF technology
+Online breaker condition monitors
+Online SF6 gas density monitor that generates automatic regulatory emission reports
+SECTION 5  ·  MOTORS &amp; GENERATORS
+Motor and generator condition monitoring
+Online partial discharge monitoring
+Motor current signature analyser
+Air-gap monitor and stator wedge analyser
+End-winding vibration monitor
+Dielectric response analyser
+Online and offline insulation monitors
+SECTION 6  ·  ESTER TRANSFORMER FLUIDS
+Fire-safe fluids for transformers that cannot fail
+Synthetic and natural ester fluids offer a fire-safe, readily biodegradable alternative to mineral oil. They are free from corrosive sulphur compounds, have excellent dielectric properties and can extend the service life of cellulose insulation, which matters most where an entire hospital or facility depends on a transformer.
+Higher fire point than mineral oil
+Readily biodegradable
+Supports longer insulation life
+
+Typical applications:
+ hospital and distribution transformers
+SECTION 7  ·  TRANSMISSION LINES
+Transmission line monitoring and maintenance equipment
+Equipment to monitor and maintain overhead and underground lines, supporting utilities in reducing outages and improving reliability. Power quality and mitigation equipment is also available.
+SECTION 8  ·  FREQUENTLY ASKED QUESTIONS
+Q.  Can you supply products for transformer and switchgear monitoring?
+Yes. We offer online gas analysis, partial discharge, bushing, moisture, temperature and breaker monitoring, plus ester transformer fluids.
+SECTION 9  ·  CALL TO ACTION
+Planning a monitoring programme for your substation or plant?
+Tell us about your transformers, switchgear and rotating machines. We will suggest a monitoring scope that fits.
+  Request a Monitoring Proposal  
+    
+  Call +91 87936 36312  
+    
+Page 8  ·  Testing, Measuring &amp; Cable Fault Instruments
+Page URL
+/solutions/testing-measuring-cable-fault-instruments/
+SEO title
+Electrical Test Instruments &amp; Cable Fault Locators | Shreeji
+Meta description
+Insulation testers, thermal cameras, earth testers, cable fault locators and crimping tools for commissioning, inspection and maintenance. Enquire today.
+Focus keywords
+electrical testing instruments, cable fault locator, insulation tester, thermal imaging camera, earth tester, underground cable locator
+SECTION 1  ·  HERO
+HERO BANNER  ·  H1
+Instruments for Commissioning, Inspection and Fault Finding
+A complete toolkit that helps engineers verify installations, spot weaknesses early and find faults fast.
+  Request Instrument Quote  
+    
+  View Instruments  
+    
+SECTION 2  ·  TESTING &amp; MEASURING INSTRUMENTS
+Everything your team needs to test with confidence
+Instrument
+Use
+Insulation tester
+Measures insulation resistance of cables, motors and equipment
+Thermal imaging camera
+Finds hot spots in panels, joints and rotating machines
+Earth tester
+Verifies earth electrode and earth loop resistance
+Multimeter and clamp meter
+General voltage, current and resistance measurement
+Portable power quality analyser
+Records voltage, harmonics, flicker and events
+Portable partial discharge tester
+Detects insulation weakness in HV equipment
+Portable appliance safety tester
+Routine electrical safety testing of appliances and equipment
+Looking for safety testing of medical devices? See the Electrical Safety Tester for Medical Equipment on the Medical Safety &amp; Hospital Power page.
+SECTION 3  ·  CABLE FAULT LOCATION
+Find the fault, not just the symptom
+
+Cable fault locators
+ for finding the exact position of a fault
+
+Underground cable locator and route tracer
+
+
+Cable partial discharge monitoring
+
+
+Cable lugs and battery-powered crimping tools
+ up to 400 sq mm
+SECTION 4  ·  CALL TO ACTION
+Tell us what you need to test
+Share your application and we will recommend instruments that match your work and your standards.
+  Request Instrument Quote  
+    
+  Call +91 87936 36312  
+    
+Page 9  ·  Oil, Gas, Pipeline &amp; Aviation Fuel Systems
+Page URL
+/solutions/oil-gas-pipeline-aviation-fuel/
+SEO title
+Pipeline Leak Detection &amp; Aviation Fuel Monitoring | Shreeji
+Meta description
+Pipeline leak and theft detection, gas leak cameras, NDT and aviation fuel hydrant tightness monitoring for oil, gas and airport fuel systems in India.
+Focus keywords
+pipeline leak detection, pipeline theft detection, gas leak detection camera, aviation fuel hydrant tightness monitoring, LDAR
+SECTION 1  ·  HERO
+HERO BANNER  ·  H1
+Protect Pipelines, Fuel Systems and the Environment
+Early detection of leaks, theft and structural defects, so you reduce product loss, protect the environment and keep logistics running.
+  Request a Consultation  
+    
+  Explore Technologies  
+    
+SECTION 2  ·  PIPELINE MONITORING
+Detect, locate and respond faster
+Pipeline Leak Detection
+Leak detection systems based on real-time transient modelling (RTTM) and negative pressure wave technology, with an additional approach based on real-time statistical analysis. Together they provide fast, reliable detection and location of leaks on oil and fuel pipelines.
+Pipeline Theft Detection
+Theft on cross-country pipelines is a serious problem for both environmental safety and logistics efficiency. Accurate theft detection systems identify illegal tapping so action can be taken quickly.
+Pipeline Operation Management
+Systems for pigging, batch tracking and pipeline integrity monitoring, together with specialised equipment for field operations.
+SECTION 3  ·  INSPECTION TECHNOLOGIES
+See what is happening inside and around your assets
+Non-Destructive Testing
+Advanced non-destructive testing based on phonon emission technology, as well as a magnetic tomography method for non-contact inspection of steel pipelines.
+Gas Leak Detection Cameras
+Optical gas imaging cameras for the quick identification of methane and volatile organic compound (VOC) leaks, enabling fast repair and supporting leak detection and repair (LDAR) compliance programmes.
+SECTION 4  ·  AVIATION FUEL SYSTEMS
+Aviation fuel hydrant tightness monitoring
+Airports use hydrant systems to refuel aircraft, and any leak in them must be caught early. Our tightness monitoring solutions use a statistical test method that analyses pressure variation at higher and lower pressure to confirm the tightness of a test section, without needing temperature sensors. Leak location is provided by acquisition units.
+Permanent online monitoring
+Continuous tightness monitoring for hydrant systems.
+Portable monitoring unit
+Supplied in carry cases for quick connection and relocation between hydrant segments.
+Leak calibration manifold
+Portable manifold for accurate low-flow measurement in hazardous areas, used to verify the monitoring system.
+All solutions are designed to meet recognised industry guidelines for aviation fuel systems.
+Aviation Fuel Storage &amp; Delivery Consulting
+Engineering consultancy for the design and development of general aviation fuel storage facilities at small or remote airfields, supported by a network of qualified partners. Clients include airlines, airports and fuel servicing companies.
+SECTION 5  ·  CALL TO ACTION
+Discuss your pipeline or fuel system challenge
+Tell us about your pipeline, terminal or airport fuel system. We will suggest the right monitoring approach.
+  Request a Consultation  
+    
+  Call +91 87936 36312  
+    
+Page 10  ·  Security &amp; Inspection Instruments
+Page URL
+/solutions/security-inspection-instruments/
+SEO title
+Handheld Chemical Identification Analyser | Shreeji
+Meta description
+Handheld analyser for police and customs to identify illicit drugs, psychoactive substances and explosives on the spot. For authorised agencies only.
+Focus keywords
+handheld chemical analyser, narcotics identification, explosives detection, customs inspection instruments
+SECTION 1  ·  HERO
+HERO BANNER  ·  H1
+Identify Threats at the Point of Inspection
+Portable chemical identification for the officers who need fast, precise answers in the field.
+  Enquiry for Authorised Agencies  
+    
+SECTION 2  ·  PRODUCT
+Handheld Chemical Identification Analyser
+A portable analyser that lets police and customs officers identify and quantify illicit drugs, psychoactive substances and explosives quickly and precisely at the point of inspection.
+Airports
+Support enforcement at passenger and cargo checkpoints.
+Land &amp; sea ports
+Fast identification at border crossings and harbours.
+Railway stations
+Field-ready analysis for transport security.
+Supplied to authorised government and enforcement agencies only, subject to applicable law.
+SECTION 3  ·  CALL TO ACTION
+Authorised agencies: request product information
+Contact our team to discuss your requirement and eligibility.
+  Send an Enquiry  
+    
+  Call +91 87936 36312  
+    
+Page 11  ·  Industries We Serve
+Page URL
+/industries/
+SEO title
+Industries We Serve | Healthcare, Power, Oil &amp; Gas | Shreeji
+Meta description
+Electrical safety and monitoring for healthcare, power, renewable energy, oil and gas, aviation, telecom, marine, rail and more. See how Shreeji helps.
+Focus keywords
+electrical safety for hospitals, power utility monitoring, telecom lightning protection, marine lightning protection, oil and gas safety
+SECTION 1  ·  HERO
+HERO BANNER  ·  H1
+Protection and Monitoring for the Industries That Cannot Afford Downtime
+From hospital theatres to offshore platforms, we match the technology to the risk of your sector.
+  Discuss Your Industry  
+    
+  Call +91 87936 36312  
+    
+SECTION 2  ·  INDUSTRY CARDS
+How we help, sector by sector
+Healthcare
+Isolated power, alarm and control systems, testers, lighting, pendants and tables for hospitals and clinics.
+Power Generation &amp; Distribution
+Transformer, switchgear and generator monitoring; cable fault location; lightning protection for substations.
+Renewable Energy
+Insulation monitoring for solar plants, protection and monitoring for wind farms and combined heat and power units.
+Oil &amp; Gas
+Leak and theft detection, gas leak cameras and electrical safety for onshore and offshore facilities, refineries and petrochemical plants.
+Aviation &amp; Airports
+Hydrant tightness monitoring and fuel storage consulting.
+Telecommunications
+Lightning protection and surge filtering for towers and remote sites.
+Marine &amp; Offshore
+Vessel lightning protection and electrical safety on ships and platforms.
+Process &amp; Primary Industry
+Insulation and residual current monitoring for continuous plants.
+Mechanical &amp; Plant Engineering
+Safety monitoring for drives, conveyors, cranes, robots, welding and food and packaging machinery.
+Transport &amp; Infrastructure
+Railways, roads, bridges, tunnels, traffic systems and logistics facilities.
+Electric Mobility
+Safety electronics for EV charging points.
+Government &amp; Enforcement
+Inspection and identification instruments for customs and police.
+SECTION 3  ·  CALL TO ACTION
+Don’t see your industry listed?
+Electrical risk exists everywhere. Describe your application and we will tell you honestly what we can and cannot do.
+  Send an Enquiry  
+    
+  Call +91 87936 36312  
+    
+Page 12  ·  How We Work, Quality &amp; Support
+Page URL
+/how-we-work/
+SEO title
+How We Work | Quality, Compliance &amp; After-Sales | Shreeji
+Meta description
+From enquiry to commissioning and after-sales care: see Shreeji Enterprises’ seven-step process, standards focus and support commitments.
+Focus keywords
+electrical safety supplier process, IEC 62305, IEC 60364-7-710, after-sales support, commissioning support
+SECTION 1  ·  HERO
+HERO BANNER  ·  H1
+A Clear Process. Honest Guidance. Support That Continues After Delivery.
+Every project follows the same transparent path, from your first call to long-term care.
+  Start Your Enquiry  
+    
+  Call +91 87936 36312  
+    
+SECTION 2  ·  OUR PROCESS
+From enquiry to after-sales care in seven steps
+1
+Enquiry
+You describe your site, system and concern by phone, email or the enquiry form.
+2
+Assessment
+We review the application, voltage system, environment and applicable standards.
+3
+Recommendation
+We propose suitable products and, where needed, a layout or protection design.
+4
+Quotation
+You receive a clear, itemised quotation with specifications.
+5
+Supply
+Products are delivered with datasheets and installation guidance.
+6
+Commissioning support
+We assist your team or contractor during installation and start-up.
+7
+After-sales care
+Ongoing technical support, spares and upgrade advice.
+SECTION 3  ·  QUALITY &amp; COMPLIANCE
+Products chosen for the standards that matter
+We select products designed to the relevant international and national standards for their application, for example the 
+IEC 62305
+ series for lightning protection and the medical-location requirements of 
+IEC 60364-7-710
+. Datasheets, test reports and compliance documents for the exact model supplied are available on request.
+SECTION 4  ·  OUR COMMITMENTS
+What you can count on
+Honest guidance
+We tell you what each product can and cannot do.
+Documentation with every order
+Datasheets and compliance documents for the model supplied.
+Installation and commissioning support
+Technical guidance during installation and start-up, coordinated with your contractor where needed.
+Clear warranty terms
+Manufacturer warranty terms passed on clearly, as stated for each product.
+Maintenance advice
+Recommendations on periodic inspection and maintenance to keep protection effective.
+
+Warranty periods and conditions vary by manufacturer and product and will be confirmed in the quotation.
+SECTION 5  ·  CALL TO ACTION
+Ready to begin?
+Tell us about your project and we will take it from there.
+  Start Your Enquiry  
+    
+  Call +91 87936 36312  
+    
+Page 13  ·  FAQ
+Page URL
+/faq/
+SEO title
+FAQs | Quotations, Delivery &amp; Support | Shreeji Enterprises
+Meta description
+Answers to common questions about quotations, supply across India, installation support and documentation from Shreeji Enterprises.
+Focus keywords
+Shreeji Enterprises FAQ, electrical safety supplier India, request quotation
+SECTION 1  ·  HERO
+HERO BANNER  ·  H1
+Frequently Asked Questions
+Quick answers about working with Shreeji Enterprises.
+  Ask Us Directly  
+    
+  Call +91 87936 36312  
+    
+SECTION 2  ·  GENERAL QUESTIONS
+Working with us
+Q.  How can I get a quotation?
+Call +91 87936 36312 or send us your requirement through the enquiry form. We will review it and respond with a quotation.
+Q.  Do you supply across India?
+Yes. We are based in Vasai, Maharashtra, and can supply to customers in other states on request.
+Q.  Do you provide installation and commissioning support?
+We provide technical guidance during installation and start-up, and can coordinate with your electrical contractor.
+Q.  Will I receive datasheets and compliance documents?
+Yes. Datasheets, test reports and compliance documents for the exact model supplied are available on request.
+Q.  What warranty do products carry?
+Warranty periods and conditions vary by manufacturer and product and are confirmed in the quotation.
+SECTION 3  ·  PRODUCT QUESTIONS
+Looking for answers about a specific solution?
+Detailed technical FAQs sit on the relevant solution pages:
+Field compensation, 100% protection and surge protection → 
+Lightning Protection
+
+Isolation panels and rooms that need isolated power → 
+Medical Safety &amp; Hospital Power
+
+Insulation monitoring vs residual current monitoring → 
+Electrical Safety &amp; Insulation Monitoring
+
+Transformer and switchgear monitoring → 
+Transformer, Switchgear &amp; Machine Monitoring
+
+SECTION 4  ·  CALL TO ACTION
+Still have a question?
+Our team is happy to help before and after purchase.
+  Contact Us  
+    
+  Call +91 87936 36312  
+    
+Page 14  ·  Contact &amp; Enquiry
+Page URL
+/contact/
+SEO title
+Contact Shreeji Enterprises | Request a Quote | Vasai, India
+Meta description
+Contact Shreeji Enterprises in Vasai West, Maharashtra. Call +91 87936 36312 or send your project details to receive a quotation.
+Focus keywords
+contact Shreeji Enterprises, electrical safety supplier Vasai, request quote lightning protection
+SECTION 1  ·  HERO
+HERO BANNER  ·  H1
+Let’s Make Your Site Safer
+Whether you are designing a new hospital theatre, protecting a tower or monitoring a substation, we will help you choose a safe, practical solution.
+  Call +91 87936 36312  
+    
+  Send an Enquiry  
+    
+SECTION 2  ·  CONTACT DETAILS
+Reach our team
+Detail
+Information
+Business
+Shreeji Enterprises
+Proprietor
+Dimple Hitesh Baxi
+Address
+HF/204, Jayraj Nagar CHS, Ambadi Road, near Gokul Park, Vasai West, Vasai Virar, Palghar, Maharashtra – 401202
+Phone
++91 87936 36312
+Email
+[Add email address]
+WhatsApp
+[Add WhatsApp number]
+Business hours
+[Add working hours]
+SECTION 3  ·  ENQUIRY FORM
+Tell us about your project
+Form fields:
+Full name
+Company / hospital name
+Email address
+Phone number
+Area of interest (dropdown): Lightning Protection / Medical Safety / Electrical Safety Monitoring / Transformer &amp; Switchgear Monitoring / Instruments / Oil &amp; Gas / Other
+Project details and requirement
+Submit button: 
+Send My Enquiry
+.   Thank-you message: “Thank you. Our team will review your requirement and respond with a quotation.”
+SECTION 4  ·  LOCATION
+Find us in Vasai West
+Embed a Google Map pin for the address above, with a “Get Directions” button.
+Launch Checklist &amp; SEO Notes
+Placeholders to complete before publishing
+Business email address
+WhatsApp number
+Business hours
+Proprietor photo and short message (About Us, optional)
+Product images, with a short descriptive alt text for each
+Privacy Policy and Terms pages (linked from the footer)
+SEO recommendations
+Use exactly 
+one H1 per page
+, as given in each Hero section. Use the section headings as H2 and product names as H3.
+Add 
+Organization / LocalBusiness
+ schema on Home and Contact, and 
+FAQPage
+ schema on pages that contain FAQs.
+Create and verify a 
+Google Business Profile
+ for the Vasai address, and keep name, address and phone identical everywhere (NAP consistency).
+Link related pages with descriptive anchor text (for example, from Medical to Transformer Monitoring for ester fluids) instead of repeating content.
+Compress images, name files descriptively (for example, medical-isolation-panel.jpg) and submit an XML sitemap in Google Search Console.
+Only publish claims you can support. Keep the coverage and warranty notes as written, since they protect your credibility.

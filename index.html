@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="icon" href="./assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=Albert+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { margin: 0; background: #F2F7F6; font-family: 'Albert Sans', sans-serif; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+    a { color: #0A4FB0; text-decoration: none; }
+    a:hover { color: #3A9E22; }
+    * { box-sizing: border-box; }
+    *:focus-visible { outline: 2px solid #3A9E22; outline-offset: 2px; }
+    html:not(.js) .reveal { opacity: 1 !important; transform: none !important; }
+    .reveal { opacity: 0; transform: translateY(26px); transition: opacity .75s cubic-bezier(.22,1,.36,1), transform .75s cubic-bezier(.22,1,.36,1); }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+    @media (prefers-reduced-motion: reduce) { .reveal { transition-duration: .35s; transform: none; } }
+    @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    @keyframes marqueeRev { 0% { transform: translateX(-50%); } 100% { transform: translateX(0); } }
+    @keyframes lineReveal { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes pulseLine { 0%, 100% { opacity: .35; } 50% { opacity: 1; } }
+    @keyframes cuePulse { 0%, 100% { opacity: .3; transform: translateY(0); } 50% { opacity: .9; transform: translateY(6px); } }
+    @keyframes driftChip { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    .reveal-line { display: inline-block; animation: lineReveal .8s cubic-bezier(.22,1,.36,1) both; }
+    .tile-hover { transition: transform .35s cubic-bezier(.22,1,.36,1), border-color .35s, box-shadow .35s; }
+    .tile-hover:hover, .tile-hover:focus-within { transform: translateY(-6px); border-color: #3A9E22 !important; box-shadow: 0 24px 50px rgba(6,31,42,.12); }
+    .tile-arrow { display: inline-flex; transition: transform .3s cubic-bezier(.22,1,.36,1); }
+    .tile-hover:hover .tile-arrow, .tile-hover:focus-within .tile-arrow { transform: translateX(6px); }
+    .tile-img { transition: transform .5s cubic-bezier(.22,1,.36,1); overflow: hidden; }
+    .tile-hover:hover .tile-img, .tile-hover:focus-within .tile-img { transform: scale(1.05); }
+    .glow-card { transition: border-color .25s, transform .25s; }
+    @media (hover: hover) { .glow-card:hover { border-color: #3A9E22 !important; transform: translateY(-3px); } }
+    .btn-magnetic { transition: transform .25s cubic-bezier(.22,1,.36,1), box-shadow .25s; }
+    @media (hover: hover) { .btn-magnetic:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(10,79,176,.35); } }
+    .btn-outline { transition: background .25s, border-color .25s, transform .25s; }
+    @media (hover: hover) { .btn-outline:hover { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.6) !important; transform: translateY(-2px); } }
+    .btn-outline-light { transition: background .25s, border-color .25s, transform .25s; }
+    @media (hover: hover) { .btn-outline-light:hover { background: #F2F7F6; border-color: #3A9E22 !important; transform: translateY(-2px); } }
+    .toggle-btn { transition: background .25s, color .25s; }
+    @media (hover: hover) { .toggle-btn:hover { background: rgba(10,79,176,.08) !important; } }
+    .faq-btn { transition: background .25s; }
+    @media (hover: hover) { .faq-btn:hover { background: #F7FAF9; } }
+    .icon-btn { transition: transform .2s, border-color .2s, background .2s; }
+    @media (hover: hover) { .icon-btn:hover { transform: scale(1.08); border-color: #3A9E22 !important; } }
+    .fab-btn { transition: transform .25s cubic-bezier(.22,1,.36,1), box-shadow .25s; }
+    @media (hover: hover) { .fab-btn:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 16px 32px rgba(6,31,42,.4); } }
+    .field { position: relative; }
+    .field label { position: absolute; left: 16px; top: 15px; font-size: 14.5px; color: #4F6A70; transition: all .2s; pointer-events: none; background: #fff; padding: 0 4px; }
+    .field input:focus + label, .field input:not(:placeholder-shown) + label,
+    .field textarea:focus + label, .field textarea:not(:placeholder-shown) + label { top: -9px; font-size: 11.5px; color: #0A4FB0; }
+    .field select { color: #0C2530; }
+    .fi { padding: 14px 16px; border-radius: 12px; border: 1px solid #D6E4E1; font-size: 14.5px; width: 100%; font-family: 'Albert Sans', sans-serif; }
+    .fi:focus { outline: 2px solid #3A9E22; outline-offset: 1px; }
+    .fi.err { border-color: #C0392B; }
+  </style>
+</helmet>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+  <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3A9E22" /><stop offset="0.5" stop-color="#0C9084" /><stop offset="1" stop-color="#0A4FB0" /></linearGradient>
+</defs></svg>
+
+<div style="position:relative; max-width:1920px; margin:0 auto; background:#F2F7F6;">
+
+  <!-- HEADER -->
+  <header style="{{ headerStyle }}">
+    <div style="display:flex; align-items:center; justify-content:space-between; gap:20px; padding:{{ headerPad }};">
+      <a href="index.html" style="display:flex; align-items:center; flex-shrink:0;"><img src="./assets/logo-light.png" alt="Shreeji Enterprises" style="height:{{ logoHeight }}; width:auto; display:block; transition:height .3s;" /></a>
+      <sc-if value="{{ !isMobile }}" hint-placeholder-val="{{ true }}">
+        <nav style="display:flex; align-items:center; gap:18px; flex-wrap:nowrap;">
+          <a href="index.html" style="font-size:14px; font-weight:500; color:#0C2530; white-space:nowrap;">Home</a>
+          <a href="About Us.dc.html" style="font-size:14px; font-weight:500; color:#0C2530; white-space:nowrap;">About</a>
+          <div style="position:relative;" onMouseEnter="{{ openSolutions }}" onMouseLeave="{{ closeSolutions }}">
+            <a href="Solutions Overview.dc.html" style="font-size:14px; font-weight:500; color:#0C2530; cursor:pointer; display:flex; align-items:center; gap:4px;">Solutions <span style="font-size:10px;">▾</span></a>
+            <sc-if value="{{ solutionsOpen }}" hint-placeholder-val="{{ false }}">
+              <div style="position:absolute; top:28px; left:50%; transform:translateX(-50%); background:#FFFFFF; border:1px solid #D6E4E1; border-radius:20px; padding:14px; width:440px; box-shadow:0 24px 60px rgba(6,31,42,.16); z-index:50; display:grid; grid-template-columns:1fr 1fr; gap:4px;">
+                <sc-for list="{{ solutionsNav }}" as="s" hint-placeholder-count="7">
+                  <a href="{{ s.href }}" style="display:flex; gap:10px; align-items:flex-start; padding:10px; border-radius:12px;">
+                    <span style="flex-shrink:0; width:32px; height:32px; border-radius:8px; background:linear-gradient(135deg, rgba(58,158,34,.22), rgba(10,79,176,.26));"></span>
+                    <span><span style="display:block; font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:13px; color:#0C2530;">{{ s.title }}</span><span style="display:block; font-size:11.5px; color:#4F6A70; margin-top:2px;">{{ s.desc }}</span></span>
+                  </a>
+                </sc-for>
+              </div>
+            </sc-if>
+          </div>
+          <a href="Industries.dc.html" style="font-size:14px; font-weight:500; color:#0C2530; white-space:nowrap;">Industries</a>
+          <a href="How We Work.dc.html" style="font-size:14px; font-weight:500; color:#0C2530; white-space:nowrap;">How We Work</a>
+          <a href="FAQ.dc.html" style="font-size:14px; font-weight:500; color:#0C2530; white-space:nowrap;">FAQ</a>
+          <a href="Contact.dc.html" style="font-size:14px; font-weight:500; color:#0C2530; white-space:nowrap;">Contact</a>
+        </nav>
+      </sc-if>
+      <div style="display:flex; align-items:center; gap:16px; flex-shrink:0;">
+        <sc-if value="{{ !isMobile }}" hint-placeholder-val="{{ true }}"><a href="tel:+918793636312" style="font-size:14px; font-weight:600; color:#0C2530; white-space:nowrap;">+91 87936 36312</a></sc-if>
+        <sc-if value="{{ !isMobile }}" hint-placeholder-val="{{ true }}"><a href="#cta" class="btn-magnetic" style="display:inline-block; padding:11px 24px; border-radius:100px; background:linear-gradient(90deg,#3A9E22,#0A4FB0); color:#fff; font-weight:600; font-size:14px; white-space:nowrap;">Get a Quote</a></sc-if>
+        <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+          <button onClick="{{ toggleMobileMenu }}" aria-label="Open menu" class="icon-btn" style="width:40px; height:40px; border-radius:50%; border:1px solid #D6E4E1; background:transparent; display:flex; align-items:center; justify-content:center; cursor:pointer;">
+            <svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M0 1H18M0 7H18M0 13H18" stroke="#0C2530" stroke-width="1.6" stroke-linecap="round" /></svg>
+          </button>
+        </sc-if>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <sc-if value="{{ mobileMenuOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed; inset:0; background:#061F2A; z-index:200; display:flex; flex-direction:column; padding:24px; overflow-y:auto;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:36px;">
+        <span style="display:inline-block; background:#fff; border-radius:14px; padding:8px 14px;"><img src="./assets/logo-light.png" alt="Shreeji Enterprises" style="height:26px; display:block;" /></span>
+        <button onClick="{{ toggleMobileMenu }}" aria-label="Close menu" class="icon-btn" style="width:40px; height:40px; border-radius:50%; border:1px solid rgba(255,255,255,.3); background:transparent; color:#fff; font-size:20px; cursor:pointer;">✕</button>
+      </div>
+      <nav style="display:flex; flex-direction:column; gap:20px;">
+        <sc-for list="{{ mobileNavItems }}" as="item" hint-placeholder-count="6">
+          <a href="{{ item.href }}" class="reveal in" style="transition-delay:{{ item.delay }}; color:#fff; font-family:'Bricolage Grotesque', sans-serif; font-size:24px; font-weight:600;">{{ item.label }}</a>
+        </sc-for>
+        <div>
+          <div style="color:#fff; font-family:'Bricolage Grotesque', sans-serif; font-size:24px; font-weight:600; margin-bottom:12px;">Solutions</div>
+          <div style="display:flex; flex-direction:column; gap:10px; padding-left:4px; border-left:2px solid rgba(255,255,255,.15);">
+            <sc-for list="{{ solutionsNav }}" as="s" hint-placeholder-count="7"><a href="{{ s.href }}" style="color:rgba(255,255,255,.75); font-size:14px; padding-left:14px;">{{ s.title }}</a></sc-for>
+          </div>
+        </div>
+      </nav>
+      <div style="margin-top:auto; padding-top:28px; display:flex; flex-direction:column; gap:14px;">
+        <a href="tel:+918793636312" style="color:#fff; font-size:16px; font-weight:600;">+91 87936 36312</a>
+        <a href="#cta" class="btn-magnetic" style="text-align:center; display:inline-block; padding:13px; border-radius:100px; background:linear-gradient(90deg,#3A9E22,#0A4FB0); color:#fff; font-weight:600; font-size:15px;">Get a Quote</a>
+      </div>
+    </div>
+  </sc-if>
+
+  <!-- FLOATING MOBILE BUTTONS -->
+  <sc-if value="{{ isMobile && !mobileMenuOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed; bottom:calc(20px + env(safe-area-inset-bottom)); right:20px; z-index:150; display:flex; flex-direction:column; gap:12px;">
+      <a href="tel:+918793636312" aria-label="Call Now" class="fab-btn" style="width:54px; height:54px; border-radius:50%; background:linear-gradient(135deg,#3A9E22,#0A4FB0); display:flex; align-items:center; justify-content:center; box-shadow:0 10px 24px rgba(6,31,42,.3);">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 3.9c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" fill="#fff"/></svg>
+      </a>
+      <a href="https://wa.me/910000000000" aria-label="WhatsApp" class="fab-btn" style="width:54px; height:54px; border-radius:50%; background:#1F8A4C; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 24px rgba(6,31,42,.3);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.4A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z" fill="#fff"/></svg>
+      </a>
+    </div>
+  </sc-if>
+
+  <!-- 01 HERO -->
+  <section style="position:relative; min-height:92vh; display:flex; align-items:center; background:#041620; padding:clamp(130px,16vw,170px) clamp(20px,5vw,64px) clamp(60px,8vw,90px); overflow:hidden; border-radius:0 0 32px 32px;">
+    <div style="position:absolute; top:-20%; left:-10%; width:60%; height:70%; background:radial-gradient(circle, rgba(58,158,34,.18), transparent 70%); filter:blur(60px); pointer-events:none;"></div>
+    <div style="position:absolute; bottom:-30%; right:-10%; width:60%; height:70%; background:radial-gradient(circle, rgba(10,79,176,.22), transparent 70%); filter:blur(60px); pointer-events:none;"></div>
+
+    <div style="position:relative; display:grid; grid-template-columns:repeat(auto-fit, minmax(340px,1fr)); gap:56px; align-items:center; width:100%; max-width:1280px; margin:0 auto;">
+      <div>
+        <h1 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; letter-spacing:-0.01em; font-size:clamp(2.1rem,4.6vw,3.5rem); line-height:1.12; color:#FFFFFF; margin:0 0 24px;">
+          <span class="reveal-line" style="animation-delay:.05s;">Electrical Safety, Lightning Protection</span><br/>
+          <span class="reveal-line" style="animation-delay:.25s;">&amp; Industrial Monitoring You Can </span><span class="reveal-line" style="animation-delay:.45s; background:linear-gradient(90deg,#3A9E22,#0C9084,#0A4FB0); -webkit-background-clip:text; background-clip:text; color:transparent;">Trust</span>
+        </h1>
+        <p style="font-size:clamp(1rem,1.3vw,1.1rem); line-height:1.7; color:rgba(255,255,255,.75); max-width:560px; margin:0 0 30px;">Shreeji Enterprises helps hospitals, factories, utilities and infrastructure owners protect people, property and uptime, with the right technology, honest advice and dependable support.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:16px; margin-bottom:26px;">
+          <a href="#cta" class="btn-magnetic" style="display:inline-block; padding:15px 30px; border-radius:100px; background:linear-gradient(90deg,#3A9E22,#0A4FB0); color:#fff; font-weight:600; font-size:15px;">Request a Quote</a>
+          <a href="#solutions" class="btn-outline" style="display:inline-block; padding:15px 30px; border-radius:100px; border:1px solid rgba(255,255,255,.35); color:#fff; font-weight:600; font-size:15px;">Explore Solutions</a>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; align-items:center; gap:10px; font-size:13px; color:rgba(255,255,255,.5);">
+          <span>Based in Vasai, Maharashtra</span><span style="opacity:.4;">/</span><span>Supplying across India</span><span style="opacity:.4;">/</span><span>GST-registered business</span>
+        </div>
+      </div>
+
+      <div style="position:relative; max-width:420px; margin:0 auto;">
+        <div style="aspect-ratio:4/5; border-radius:28px; background:linear-gradient(150deg, rgba(58,158,34,.2), rgba(10,79,176,.26)); border:1px solid rgba(255,255,255,.18); display:flex; align-items:center; justify-content:center; padding:20px; text-align:center;">
+          <span style="font-size:12.5px; color:rgba(255,255,255,.6); font-style:italic;">Photo: hospital operating theatre or telecom tower at dusk — 4:5</span>
+        </div>
+        <div style="position:absolute; left:-30px; bottom:40px; background:#FFFFFF; border-radius:16px; padding:14px 18px; box-shadow:0 20px 40px rgba(6,31,42,.25); max-width:200px; animation:driftChip 7s ease-in-out infinite;">
+          <span style="font-size:13px; font-weight:600; color:#0C2530;">Protect people, property and uptime</span>
+        </div>
+        <div style="position:absolute; right:-24px; top:30px; background:#FFFFFF; border-radius:16px; padding:14px 18px; box-shadow:0 20px 40px rgba(6,31,42,.25); max-width:190px; animation:driftChip 8.5s ease-in-out infinite 1s;">
+          <span style="font-size:13px; font-weight:600; color:#0C2530;">Honest advice, dependable support</span>
+        </div>
+      </div>
+    </div>
+    <div style="position:absolute; bottom:24px; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:6px; animation:cuePulse 2.2s ease-in-out infinite;">
+      <span style="font-size:11px; letter-spacing:.04em; color:rgba(255,255,255,.5);">Scroll</span>
+      <svg width="14" height="20" viewBox="0 0 14 20" fill="none"><path d="M1 1l6 7 6-7M1 11l6 7 6-7" stroke="rgba(255,255,255,.5)" stroke-width="1.4" stroke-linecap="round" fill="none"/></svg>
+    </div>
+  </section>
+
+  <!-- 02 INTRODUCTION -->
+  <section style="background:#F2F7F6; padding:clamp(70px,9vw,110px) clamp(20px,5vw,64px);">
+    <div style="max-width:1200px; margin:0 auto;">
+      <div class="reveal" ref="{{ reveal }}" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(340px,1fr)); gap:48px; align-items:center; margin-bottom:56px;">
+        <div>
+          <h2 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(1.7rem,3.2vw,2.4rem); line-height:1.25; color:#0C2530; margin:0 0 24px;">Power should move progress forward, never put it at risk</h2>
+          <p style="font-size:16.5px; line-height:1.75; color:#4F6A70; margin:0 0 20px;">Shreeji Enterprises is a Maharashtra-based supplier of electrical safety, lightning protection and condition-monitoring solutions. For every customer we study the application, recommend the most suitable technology and supply it with the documentation and guidance needed for a safe, compliant installation.</p>
+          <p style="font-size:16.5px; line-height:1.75; color:#4F6A70; margin:0;">From a hospital operating theatre to a telecom tower or a fuel pipeline, our work centres on one idea: protect what matters before something goes wrong.</p>
+        </div>
+        <div style="aspect-ratio:1/1; border-radius:28px; background:linear-gradient(150deg, rgba(58,158,34,.14), rgba(10,79,176,.18)); border:1px solid #D6E4E1; display:flex; align-items:center; justify-content:center; padding:24px; text-align:center;">
+          <span style="font-size:13px; color:#4F6A70; font-style:italic;">Photo: engineers reviewing a panel on site — 1:1</span>
+        </div>
+      </div>
+      <div class="reveal" ref="{{ reveal }}" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(160px,1fr)); gap:24px; border-top:1px solid #D6E4E1; padding-top:36px;">
+        <sc-for list="{{ glanceStats }}" as="stat" hint-placeholder-count="3">
+          <div>
+            <div style="font-family:'Bricolage Grotesque', sans-serif; font-weight:700; font-size:clamp(2rem,3.6vw,2.6rem); color:#0C2530;">{{ stat.value }}</div>
+            <div style="font-size:13.5px; color:#4F6A70; margin-top:6px;">{{ stat.label }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 HIDDEN RISKS -->
+  <section style="background:#061F2A; padding:clamp(70px,9vw,110px) clamp(20px,5vw,64px);">
+    <div style="max-width:1200px; margin:0 auto;">
+      <h2 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(1.7rem,3.2vw,2.4rem); color:#FFFFFF; margin:0 0 44px; max-width:600px;">Three risks you rarely see coming</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:22px; margin-bottom:48px;">
+        <sc-for list="{{ risks }}" as="risk" hint-placeholder-count="3">
+          <div style="background:#08232F; border:1px solid #0E3240; border-radius:22px; padding:30px;">
+            <svg width="42" height="42" viewBox="0 0 48 48" fill="none" style="margin-bottom:18px;" dangerouslySetInnerHTML="{{ risk.iconHtml }}"></svg>
+            <h3 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:18.5px; color:#FFFFFF; margin:0 0 10px;">{{ risk.title }}</h3>
+            <p style="font-size:14.5px; line-height:1.7; color:rgba(255,255,255,.65); margin:0;">{{ risk.desc }}</p>
+          </div>
+        </sc-for>
+      </div>
+      <div style="border-top:1px solid rgba(255,255,255,.15); padding-top:40px;">
+        <p style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(1.3rem,2.4vw,1.9rem); line-height:1.45; color:#FFFFFF; max-width:780px; margin:0;">Prevention costs a fraction of the loss it avoids. Early warning, continuous monitoring and properly specified protection turn unpredictable hazards into planned maintenance. That is the value we bring to every project.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 SOLUTIONS BENTO -->
+  <section id="solutions" style="background:#F2F7F6; padding:clamp(70px,9vw,110px) clamp(20px,5vw,64px);">
+    <div style="max-width:1280px; margin:0 auto;">
+      <h2 class="reveal" ref="{{ reveal }}" style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(1.7rem,3.2vw,2.4rem); color:#0C2530; margin:0 0 44px; max-width:600px;">Seven solution areas, one dependable partner</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:22px;">
+        <a href="Lightning Protection.dc.html" class="tile-hover reveal" ref="{{ reveal }}" style="grid-column:span 2; background:#FFFFFF; border:1px solid #D6E4E1; border-radius:24px; padding:32px; display:grid; grid-template-columns:1.2fr 1fr; gap:24px; min-height:280px;">
+          <div style="display:flex; flex-direction:column; justify-content:space-between;">
+            <svg width="36" height="36" viewBox="0 0 40 40" fill="none"><path d="M20 4l-13 18h9l-3 14 13-18h-9l3-14z" stroke="url(#brandGrad)" stroke-width="2" stroke-linejoin="round" fill="none"/></svg>
+            <div><h3 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:21px; color:#0C2530; margin:0 0 10px;">Lightning Protection</h3><p style="font-size:14.5px; color:#4F6A70; line-height:1.6; margin:0 0 16px;">Prevent direct strikes and reduce surge and electromagnetic damage.</p><span style="font-size:14px; font-weight:600; color:#0A4FB0; display:inline-flex; align-items:center; gap:6px;">Explore <span class="tile-arrow"><svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M0 5h12M8 1l4 4-4 4" stroke="#0A4FB0" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></span></span></div>
+          </div>
+          <div class="tile-img" style="border-radius:16px; background:linear-gradient(135deg, rgba(58,158,34,.16), rgba(10,79,176,.2)); display:flex; align-items:center; justify-content:center; padding:10px; text-align:center;"><span style="font-size:11px; color:#4F6A70; font-style:italic;">Photo: protector on a tower — 16:9</span></div>
+        </a>
+        <a href="Medical Safety.dc.html" class="tile-hover reveal" ref="{{ reveal }}" style="grid-column:span 2; background:#061F2A; border:1px solid #0E3240; border-radius:24px; padding:32px; display:grid; grid-template-columns:1.2fr 1fr; gap:24px; min-height:280px;">
+          <div style="display:flex; flex-direction:column; justify-content:space-between;">
+            <svg width="36" height="36" viewBox="0 0 40 40" fill="none"><path d="M4 22h8l3-10 5 18 4-14 3 6h9" stroke="url(#brandGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            <div><h3 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:21px; color:#FFFFFF; margin:0 0 10px;">Medical Safety &amp; Hospital Power</h3><p style="font-size:14.5px; color:rgba(255,255,255,.65); line-height:1.6; margin:0 0 16px;">Safe, uninterrupted power for operating theatres, ICUs and patient areas.</p><span style="font-size:14px; font-weight:600; color:#fff; display:inline-flex; align-items:center; gap:6px;">Explore <span class="tile-arrow"><svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M0 5h12M8 1l4 4-4 4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></span></span></div>
+          </div>
+          <div class="tile-img" style="border-radius:16px; background:linear-gradient(135deg, rgba(58,158,34,.16), rgba(10,79,176,.22)); display:flex; align-items:center; justify-content:center; padding:10px; text-align:center;"><span style="font-size:11px; color:rgba(255,255,255,.5); font-style:italic;">Photo: isolated power panel — 16:9</span></div>
+        </a>
+        <sc-for list="{{ smallTiles }}" as="t" hint-placeholder-count="5">
+          <a href="{{ t.href }}" class="tile-hover reveal" ref="{{ reveal }}" style="background:#FFFFFF; border:1px solid #D6E4E1; border-radius:24px; padding:28px; display:flex; flex-direction:column; justify-content:space-between; min-height:260px; gap:14px;">
+            <span dangerouslySetInnerHTML="{{ t.iconHtml }}"></span>
+            <div>
+              <h3 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:16.5px; color:#0C2530; margin:0 0 8px;">{{ t.title }}</h3>
+              <p style="font-size:13.5px; color:#4F6A70; line-height:1.6; margin:0 0 12px;">{{ t.desc }}</p>
+              <span style="font-size:13px; font-weight:600; color:#0A4FB0; display:inline-flex; align-items:center; gap:6px;">Explore <span class="tile-arrow"><svg width="13" height="9" viewBox="0 0 14 10" fill="none"><path d="M0 5h12M8 1l4 4-4 4" stroke="#0A4FB0" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></span></span>
+            </div>
+            <div class="tile-img" style="aspect-ratio:16/9; border-radius:12px; background:linear-gradient(135deg, rgba(58,158,34,.12), rgba(10,79,176,.16)); display:flex; align-items:center; justify-content:center; padding:8px; text-align:center;"><span style="font-size:10.5px; color:#4F6A70; font-style:italic;">{{ t.caption }}</span></div>
+          </a>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 LIGHTNING SPOTLIGHT -->
+  <section style="background:#FFFFFF; padding:clamp(70px,9vw,110px) clamp(20px,5vw,64px);">
+    <div class="reveal" ref="{{ reveal }}" style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(340px,1fr)); gap:48px; align-items:center;">
+      <div>
+        <h2 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(1.5rem,2.8vw,2.1rem); line-height:1.3; color:#0C2530; margin:0 0 20px;">Electric field compensation: preventing the strike, not just surviving it</h2>
+        <div style="display:flex; gap:4px; padding:4px; background:#F2F7F6; border-radius:100px; width:fit-content; margin-bottom:24px;">
+          <button onClick="{{ setLightningMode('conventional') }}" class="toggle-btn" style="padding:9px 18px; border-radius:100px; border:none; cursor:pointer; font-size:13px; font-weight:600; font-family:'Albert Sans', sans-serif; background:{{ modeConventionalBg }}; color:{{ modeConventionalColor }}; transition:all .25s;">Conventional rod</button>
+          <button onClick="{{ setLightningMode('compensation') }}" class="toggle-btn" style="padding:9px 18px; border-radius:100px; border:none; cursor:pointer; font-size:13px; font-weight:600; font-family:'Albert Sans', sans-serif; background:{{ modeCompensationBg }}; color:{{ modeCompensationColor }}; transition:all .25s;">Field compensation</button>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:14px; margin-bottom:28px;">
+          <sc-for list="{{ lightningChips }}" as="c" hint-placeholder-count="5">
+            <div style="display:flex; gap:12px; align-items:flex-start; padding:14px 16px; border:1px solid #D6E4E1; border-radius:16px; background:#F2F7F6;">
+              <span style="flex-shrink:0; width:8px; height:8px; border-radius:50%; margin-top:6px; background:linear-gradient(135deg,#3A9E22,#0A4FB0);"></span>
+              <div><span style="display:block; font-weight:600; font-size:14.5px; color:#0C2530;">{{ c.title }}</span><span style="display:block; font-size:13.5px; color:#4F6A70; margin-top:2px;">{{ c.desc }}</span></div>
+            </div>
+          </sc-for>
+        </div>
+        <p style="font-size:12.5px; color:#4F6A70; font-style:italic; margin:0 0 24px;">No lightning protection system can honestly promise absolute protection. Coverage depends on correct design, mounting height and local regulations.</p>
+        <a href="Lightning Protection.dc.html" class="btn-magnetic" style="display:inline-block; padding:14px 28px; border-radius:100px; background:linear-gradient(90deg,#3A9E22,#0A4FB0); color:#fff; font-weight:600; font-size:14.5px;">Explore Lightning Protection →</a>
+      </div>
+      <div>
+        <div style="aspect-ratio:1/1; max-width:380px; margin:0 auto; position:relative; display:flex; align-items:center; justify-content:center;">
+          <sc-if value="{{ lightningConventional }}" hint-placeholder-val="{{ false }}">
+            <svg width="100%" height="100%" viewBox="0 0 320 320" fill="none">
+              <line x1="160" y1="60" x2="160" y2="260" stroke="#4F6A70" stroke-width="4"/>
+              <path d="M150 30l-16 46h14l-18 50 36-56h-16l10-40z" fill="url(#brandGrad)" opacity="{{ reducedMotion ? 1 : boltOpacity }}" style="transition:opacity .15s;"/>
+              <circle cx="90" cy="150" r="5" fill="#C0392B" opacity="{{ reducedMotion ? 0.8 : rippleOpacity }}" style="transition:opacity .4s;"/>
+              <circle cx="230" cy="180" r="5" fill="#C0392B" opacity="{{ reducedMotion ? 0.8 : rippleOpacity }}" style="transition:opacity .4s;"/>
+            </svg>
+          </sc-if>
+          <sc-if value="{{ !lightningConventional }}" hint-placeholder-val="{{ true }}">
+            <svg width="100%" height="100%" viewBox="0 0 320 320" fill="none">
+              <line x1="160" y1="60" x2="160" y2="260" stroke="#4F6A70" stroke-width="4"/>
+              <circle cx="160" cy="60" r="8" fill="url(#brandGrad)"/>
+              <sc-if value="{{ allowMotion }}" hint-placeholder-val="{{ true }}">
+                <circle cx="160" cy="60" r="50" stroke="url(#brandGrad)" stroke-width="1.4" opacity=".7" style="animation:pulseLine 2.6s ease-in-out infinite;"/>
+                <circle cx="160" cy="60" r="90" stroke="url(#brandGrad)" stroke-width="1" opacity=".4" style="animation:pulseLine 2.6s ease-in-out infinite .4s;"/>
+                <circle cx="160" cy="60" r="130" stroke="url(#brandGrad)" stroke-width="1" opacity=".2" style="animation:pulseLine 2.6s ease-in-out infinite .8s;"/>
+              </sc-if>
+              <sc-if value="{{ !allowMotion }}" hint-placeholder-val="{{ false }}">
+                <circle cx="160" cy="60" r="50" stroke="url(#brandGrad)" stroke-width="1.4" opacity=".5"/><circle cx="160" cy="60" r="90" stroke="url(#brandGrad)" stroke-width="1" opacity=".3"/>
+              </sc-if>
+            </svg>
+          </sc-if>
+        </div>
+        <div style="aspect-ratio:16/10; margin-top:8px; border-radius:20px; background:linear-gradient(150deg, rgba(58,158,34,.14), rgba(10,79,176,.18)); border:1px solid #D6E4E1; display:flex; align-items:center; justify-content:center; padding:16px; text-align:center;"><span style="font-size:12.5px; color:#4F6A70; font-style:italic;">Photo: tower or rooftop protector — 16:10</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 MEDICAL SPOTLIGHT -->
+  <section style="background:#061F2A; padding:clamp(70px,9vw,110px) clamp(20px,5vw,64px);">
+    <div class="reveal" ref="{{ reveal }}" style="max-width:1200px; margin:0 auto;">
+      <h2 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(1.5rem,2.8vw,2.1rem); color:#FFFFFF; margin:0 0 10px; max-width:640px;">Electrical safety for patients and staff</h2>
+      <p style="font-size:15px; color:rgba(255,255,255,.6); margin:0 0 32px; max-width:620px;">Meeting <strong style="color:#fff;">IEC 60364-7-710</strong> for medically used rooms means achieving three things together.</p>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:20px; align-items:start; margin-bottom:36px;">
+        <div style="grid-column:1 / -1; background:#08232F; border:1px solid #0E3240; border-radius:20px; padding:26px; display:flex; flex-wrap:wrap; gap:24px; align-items:center; justify-content:space-between;">
+          <div style="display:flex; gap:28px; flex-wrap:wrap;">
+            <div><div style="font-size:12px; color:rgba(255,255,255,.5); margin-bottom:6px;">Supply</div><div style="display:flex; align-items:center; gap:8px;"><span style="width:10px; height:10px; border-radius:50%; background:#3A9E22; box-shadow:0 0 12px #3A9E22;"></span><span style="font-size:14px; font-weight:600; color:#fff;">ON</span></div></div>
+            <div><div style="font-size:12px; color:rgba(255,255,255,.5); margin-bottom:6px;">Insulation</div><div style="display:flex; align-items:center; gap:8px;"><span style="width:10px; height:10px; border-radius:50%; background:{{ insulationColor }}; transition:background .3s;"></span><span style="font-size:14px; font-weight:600; color:#fff;">{{ insulationLabel }}</span></div></div>
+            <div><div style="font-size:12px; color:rgba(255,255,255,.5); margin-bottom:6px;">Alarm panel</div><div style="width:34px; height:20px; border-radius:6px; background:{{ faultActive ? '#E8A33D' : '#15313E' }}; animation:{{ faultAnim }}; transition:background .3s;"></div></div>
+          </div>
+          <button onClick="{{ simulateFault }}" class="btn-outline" style="padding:12px 22px; border-radius:100px; border:1px solid rgba(255,255,255,.3); background:transparent; color:#fff; font-weight:600; font-size:13.5px; cursor:pointer;">Simulate a first fault</button>
+        </div>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:22px; margin-bottom:40px;">
+        <sc-for list="{{ medicalGoals }}" as="g" hint-placeholder-count="3">
+          <div class="glow-card" style="border:1px solid #0E3240; border-radius:20px; padding:28px; background:#08232F;">
+            <svg width="90" height="20" viewBox="0 0 90 20" fill="none" style="margin-bottom:16px;"><path d="M0 10h20l5-8 6 16 5-12 4 4h50" stroke="url(#brandGrad)" stroke-width="1.5" style="animation:pulseLine 2.4s ease-in-out infinite;"/></svg>
+            <h3 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:17px; color:#FFFFFF; margin:0 0 8px;">{{ g.title }}</h3>
+            <p style="font-size:14px; color:rgba(255,255,255,.6); line-height:1.6; margin:0;">{{ g.desc }}</p>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:40px; align-items:center;">
+        <div style="aspect-ratio:16/9; border-radius:20px; background:linear-gradient(150deg, rgba(58,158,34,.16), rgba(10,79,176,.2)); border:1px solid #0E3240; display:flex; align-items:center; justify-content:center; padding:16px; text-align:center;"><span style="font-size:12.5px; color:rgba(255,255,255,.5); font-style:italic;">Photo: operating theatre with ceiling pendants — 16:9</span></div>
+        <a href="Medical Safety.dc.html" class="btn-magnetic" style="justify-self:start; display:inline-block; padding:14px 28px; border-radius:100px; background:linear-gradient(90deg,#3A9E22,#0A4FB0); color:#fff; font-weight:600; font-size:14.5px;">Explore Medical Safety →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 FOUR LAYERS -->
+  <section ref="{{ layersSectionRef }}" style="background:#F2F7F6; padding:clamp(70px,9vw,110px) clamp(20px,5vw,64px);">
+    <div class="reveal" ref="{{ reveal }}" style="max-width:1100px; margin:0 auto;">
+      <h2 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(1.6rem,3vw,2.3rem); color:#0C2530; margin:0 0 44px; max-width:600px;">Two risks, one complete system</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px,1fr)); gap:48px; align-items:center;">
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <sc-for list="{{ layers }}" as="layer" hint-placeholder-count="4">
+            <div tabIndex="0" onMouseEnter="{{ layer.onHover }}" onFocus="{{ layer.onHover }}" onClick="{{ layer.onHover }}" style="padding:18px 20px; border-radius:16px; cursor:pointer; background:{{ layer.bg }}; border:1px solid {{ layer.borderColor }}; transition:all .25s;">
+              <div style="display:flex; gap:14px; align-items:flex-start;">
+                <span style="font-family:'Bricolage Grotesque', sans-serif; font-weight:700; font-size:14px; color:{{ layer.numColor }};">0{{ layer.i2 }}</span>
+                <div><div style="font-weight:600; font-size:15.5px; color:#0C2530; margin-bottom:4px;">{{ layer.title }}</div><div style="font-size:13.5px; color:#4F6A70; line-height:1.6;">{{ layer.desc }}</div></div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+        <svg width="100%" height="320" viewBox="0 0 320 320" style="margin:0 auto; max-width:320px;">
+          <sc-for list="{{ layers }}" as="layer" hint-placeholder-count="4">
+            <circle cx="160" cy="160" r="{{ layer.radius }}" fill="none" stroke="url(#brandGrad)" stroke-width="{{ layer.strokeWidth }}" opacity="{{ layer.ringOpacity }}" style="transition:all .3s;"/>
+          </sc-for>
+          <circle cx="160" cy="160" r="6" fill="url(#brandGrad)"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 WHY CHOOSE US -->
+  <section style="background:#061F2A; padding:clamp(70px,9vw,110px) clamp(20px,5vw,64px); margin:0 clamp(12px,2vw,24px); border-radius:32px;">
+    <div class="reveal" ref="{{ reveal }}" style="max-width:1100px; margin:0 auto;">
+      <h2 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(1.7rem,3.2vw,2.4rem); color:#FFFFFF; margin:0 0 44px; max-width:600px;">Why customers choose Shreeji Enterprises</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:18px;">
+        <div class="glow-card" style="grid-column:span 2; border:1px solid rgba(255,255,255,.14); border-radius:20px; padding:30px; display:flex; flex-direction:column; gap:14px; background:rgba(255,255,255,.03);">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="6" y="6" width="28" height="28" rx="8" stroke="url(#brandGrad)" stroke-width="2"/><path d="M14 20h12M20 14v12" stroke="url(#brandGrad)" stroke-width="2" stroke-linecap="round"/></svg>
+          <h3 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:19px; color:#FFFFFF; margin:0;">One-stop range</h3>
+          <p style="font-size:14.5px; line-height:1.65; color:rgba(255,255,255,.62); margin:0; max-width:460px;">Lightning protection, medical power, monitoring, instruments and hospital equipment from a single partner.</p>
+        </div>
+        <sc-for list="{{ whyChoose }}" as="item" hint-placeholder-count="6">
+          <div class="glow-card" style="border:1px solid rgba(255,255,255,.12); border-radius:18px; padding:22px; display:flex; gap:14px;">
+            <span style="flex-shrink:0; width:9px; height:9px; border-radius:50%; margin-top:6px; background:linear-gradient(135deg,#3A9E22,#0A4FB0);"></span>
+            <div><h3 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:16px; color:#FFFFFF; margin:0 0 6px;">{{ item.title }}</h3><p style="font-size:13.5px; line-height:1.6; color:rgba(255,255,255,.6); margin:0;">{{ item.desc }}</p></div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 INDUSTRIES -->
+  <section style="background:#F2F7F6; padding:clamp(60px,8vw,90px) 0; overflow:hidden;">
+    <h2 class="reveal" ref="{{ reveal }}" style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(1.5rem,2.8vw,2.1rem); color:#0C2530; margin:0 0 36px; padding:0 clamp(20px,5vw,64px); max-width:600px;">Trusted across demanding sectors</h2>
+    <sc-if value="{{ allowMotion }}" hint-placeholder-val="{{ true }}">
+      <div style="overflow:hidden; margin-bottom:14px;" style-hover="opacity:.8;"><div style="display:flex; gap:14px; width:max-content; animation:marquee 44s linear infinite;"><sc-for list="{{ industriesDouble }}" as="ind" hint-placeholder-count="24"><span style="flex-shrink:0; padding:12px 22px; border:1px solid #D6E4E1; border-radius:100px; font-size:14px; color:#0C2530; background:#FFFFFF; white-space:nowrap;">{{ ind }}</span></sc-for></div></div>
+      <div style="overflow:hidden;" style-hover="opacity:.8;"><div style="display:flex; gap:14px; width:max-content; animation:marqueeRev 50s linear infinite;"><sc-for list="{{ industriesDouble }}" as="ind" hint-placeholder-count="24"><span style="flex-shrink:0; padding:12px 22px; border:1px solid #D6E4E1; border-radius:100px; font-size:14px; color:#0C2530; background:#FFFFFF; white-space:nowrap;">{{ ind }}</span></sc-for></div></div>
+    </sc-if>
+    <sc-if value="{{ !allowMotion }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex; flex-wrap:wrap; gap:12px; padding:0 clamp(20px,5vw,64px);"><sc-for list="{{ industries }}" as="ind" hint-placeholder-count="12"><span style="padding:12px 22px; border:1px solid #D6E4E1; border-radius:100px; font-size:14px; color:#0C2530; background:#FFFFFF;">{{ ind }}</span></sc-for></div>
+    </sc-if>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(160px,1fr)); gap:16px; padding:0 clamp(20px,5vw,64px); margin-top:40px;">
+      <sc-for list="{{ featuredSectors }}" as="f" hint-placeholder-count="4">
+        <a href="Industries.dc.html" class="tile-img tile-hover" style="aspect-ratio:3/4; border-radius:18px; background:linear-gradient(150deg, rgba(58,158,34,.16), rgba(10,79,176,.2)); border:1px solid #D6E4E1; display:flex; align-items:flex-end; padding:16px;"><span style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:14px; color:#0C2530;">{{ f }}</span></a>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- 10 PROCESS -->
+  <section ref="{{ timelineRef }}" style="background:#FFFFFF; padding:clamp(70px,9vw,110px) clamp(20px,5vw,64px);">
+    <div class="reveal" ref="{{ reveal }}" style="max-width:1200px; margin:0 auto;">
+      <h2 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(1.7rem,3.2vw,2.4rem); color:#0C2530; margin:0 0 12px; max-width:600px;">From first enquiry to after-sales care</h2>
+      <p style="font-size:15.5px; color:#4F6A70; margin:0 0 56px;">A clear, seven-step journey with honest guidance at every stage.</p>
+      <sc-if value="{{ !isMobile }}" hint-placeholder-val="{{ true }}">
+        <div style="position:relative; padding-top:6px;">
+          <div style="position:absolute; top:6px; left:0; right:0; height:2px; background:#D6E4E1;"></div>
+          <div style="position:absolute; top:6px; left:0; height:2px; background:linear-gradient(90deg,#3A9E22,#0A4FB0); width:{{ timelineWidth }}; transition:width 1.4s cubic-bezier(.2,.7,.2,1);"></div>
+          <div style="display:flex; flex-wrap:nowrap; gap:14px;">
+            <sc-for list="{{ processSteps }}" as="step" hint-placeholder-count="7">
+              <div style="padding-top:22px; position:relative; flex:1 1 0; min-width:0;">
+                <span style="position:absolute; top:-3px; left:0; width:8px; height:8px; border-radius:50%; background:#0A4FB0;"></span>
+                <div style="font-size:12px; font-weight:600; color:#A9BDBE; margin-bottom:6px;">0{{ step.n }}</div>
+                <div style="font-size:clamp(11px,1.1vw,14.5px); font-weight:600; color:#0C2530; margin-bottom:6px; line-height:1.3;">{{ step.label }}</div>
+                <div style="font-size:12px; color:#4F6A70; line-height:1.5;">{{ step.desc }}</div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-if>
+      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+        <div style="position:relative; padding-left:24px;">
+          <div style="position:absolute; left:3px; top:4px; bottom:4px; width:2px; background:#D6E4E1;"></div>
+          <div style="position:absolute; left:3px; top:4px; width:2px; background:linear-gradient(180deg,#3A9E22,#0A4FB0); height:{{ timelineWidth }}; transition:height 1.4s cubic-bezier(.2,.7,.2,1);"></div>
+          <div style="display:flex; flex-direction:column; gap:28px;">
+            <sc-for list="{{ processSteps }}" as="step" hint-placeholder-count="7">
+              <div style="position:relative;">
+                <span style="position:absolute; left:-24px; top:3px; width:8px; height:8px; border-radius:50%; background:#0A4FB0;"></span>
+                <div style="font-size:12px; font-weight:600; color:#A9BDBE; margin-bottom:4px;">0{{ step.n }}</div>
+                <div style="font-size:16px; font-weight:600; color:#0C2530; margin-bottom:4px;">{{ step.label }}</div>
+                <div style="font-size:13.5px; color:#4F6A70; line-height:1.6;">{{ step.desc }}</div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-if>
+      <a href="How We Work.dc.html" style="display:inline-block; margin-top:48px; font-size:15px; font-weight:600; color:#0A4FB0;">See how we work →</a>
+    </div>
+  </section>
+
+  <!-- 11 FAQ PREVIEW -->
+  <section style="background:#F2F7F6; padding:clamp(70px,9vw,110px) clamp(20px,5vw,64px);">
+    <div class="reveal" ref="{{ reveal }}" style="max-width:800px; margin:0 auto;">
+      <h2 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(1.6rem,3vw,2.2rem); color:#0C2530; margin:0 0 36px;">Frequently asked questions</h2>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <sc-for list="{{ faqs }}" as="faq" hint-placeholder-count="4">
+          <div style="background:#FFFFFF; border:1px solid #D6E4E1; border-radius:16px; overflow:hidden;">
+            <button onClick="{{ faq.toggle }}" aria-expanded="{{ faq.open }}" class="faq-btn" style="width:100%; text-align:left; background:none; border:none; padding:20px 22px; display:flex; justify-content:space-between; align-items:center; cursor:pointer; font-size:15.5px; font-weight:600; color:#0C2530; font-family:'Bricolage Grotesque', sans-serif;">
+              {{ faq.q }}<span style="flex-shrink:0; margin-left:16px; transform:{{ faq.rotate }}; transition:transform .3s; font-size:20px; color:#0A4FB0;">+</span>
+            </button>
+            <div style="max-height:{{ faq.maxHeight }}; overflow:hidden; transition:max-height .35s cubic-bezier(.22,1,.36,1);"><p style="margin:0; padding:0 22px 20px; font-size:14.5px; line-height:1.7; color:#4F6A70;">{{ faq.a }}</p></div>
+          </div>
+        </sc-for>
+      </div>
+      <a href="FAQ.dc.html" style="display:inline-block; margin-top:28px; font-size:15px; font-weight:600; color:#0A4FB0;">View all FAQs →</a>
+    </div>
+  </section>
+
+  <!-- 12 CTA + ENQUIRY -->
+  <section id="cta" style="position:relative; background:#061F2A; margin:0 clamp(12px,2vw,24px) clamp(24px,3vw,40px); border-radius:32px; padding:clamp(60px,9vw,100px) clamp(24px,5vw,64px); overflow:hidden;">
+    <div class="reveal" ref="{{ reveal }}" style="position:relative; display:grid; grid-template-columns:repeat(auto-fit, minmax(340px,1fr)); gap:48px; max-width:1100px; margin:0 auto;">
+      <div>
+        <h2 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(1.8rem,3.4vw,2.5rem); line-height:1.25; color:#FFFFFF; margin:0 0 18px;">Tell us about your site. We will help you choose a safe, practical solution.</h2>
+        <p style="font-size:15.5px; line-height:1.7; color:rgba(255,255,255,.72); margin:0 0 30px;">Designing a new hospital theatre, protecting a tower or monitoring a substation? Talk to our team today.</p>
+        <a href="tel:+918793636312" class="btn-outline" style="display:inline-block; padding:15px 30px; border-radius:100px; border:1px solid rgba(255,255,255,.35); color:#fff; font-weight:600; font-size:15px;">Call +91 87936 36312</a>
+      </div>
+      <sc-if value="{{ !formSubmitted }}" hint-placeholder-val="{{ true }}">
+        <form onSubmit="{{ submitForm }}" style="background:#FFFFFF; border-radius:24px; padding:28px; display:flex; flex-direction:column; gap:18px;">
+          <div class="field"><input ref="{{ nameRef }}" placeholder=" " class="{{ nameErrClass }}" /><label>Full name *</label></div>
+          <div class="field"><input ref="{{ companyRef }}" placeholder=" " class="fi" /><label>Company name</label></div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(150px,1fr)); gap:14px;">
+            <div class="field"><input ref="{{ emailRef }}" type="email" placeholder=" " class="{{ emailErrClass }}" /><label>Email address *</label></div>
+            <div class="field"><input ref="{{ phoneRef }}" type="tel" placeholder=" " class="{{ phoneErrClass }}" /><label>Phone number *</label></div>
+          </div>
+          <select ref="{{ interestRef }}" class="fi">
+            <option value="">Area of interest</option><option>Lightning Protection</option><option>Medical Safety</option><option>Electrical Safety Monitoring</option><option>Transformer &amp; Switchgear Monitoring</option><option>Instruments</option><option>Oil &amp; Gas</option><option>Other</option>
+          </select>
+          <div class="field"><textarea ref="{{ detailsRef }}" placeholder=" " rows="3" class="fi" style="resize:vertical;"></textarea><label>Project details and requirement</label></div>
+          <sc-if value="{{ formError }}" hint-placeholder-val="{{ false }}"><p style="color:#C0392B; font-size:13px; margin:0;">{{ formError }}</p></sc-if>
+          <button type="submit" disabled="{{ submitting }}" class="btn-magnetic" style="padding:15px; border-radius:100px; border:none; background:linear-gradient(90deg,#3A9E22,#0A4FB0); color:#fff; font-weight:600; font-size:15px; cursor:pointer; opacity:{{ submitOpacity }};">{{ submitLabel }}</button>
+        </form>
+      </sc-if>
+      <sc-if value="{{ formSubmitted }}" hint-placeholder-val="{{ false }}">
+        <div style="background:#FFFFFF; border-radius:24px; padding:40px; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; gap:10px;">
+          <div style="width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,#3A9E22,#0A4FB0); display:flex; align-items:center; justify-content:center; color:#fff; font-size:20px;">✓</div>
+          <p style="font-size:15.5px; color:#0C2530; margin:0; line-height:1.6;">Thank you. Our team will review your requirement and respond with a quotation.</p>
+        </div>
+      </sc-if>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#061F2A; border-radius:32px 32px 0 0; padding:clamp(50px,7vw,70px) clamp(20px,5vw,64px) 30px;">
+    <div style="max-width:1280px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:40px; padding-bottom:40px; border-bottom:1px solid rgba(255,255,255,.12);">
+      <div>
+        <span style="display:inline-block; background:#fff; border-radius:16px; padding:10px 16px; margin-bottom:18px;"><img src="./assets/logo-light.png" alt="Shreeji Enterprises" style="height:28px; display:block;" /></span>
+        <p style="font-size:14px; line-height:1.7; color:rgba(255,255,255,.55); max-width:260px; margin:0;">HF/204, Jayraj Nagar CHS, Ambadi Road, near Gokul Park, Vasai West, Vasai Virar, Palghar, Maharashtra – 401202</p>
+      </div>
+      <div><div style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; color:#FFFFFF; font-size:14px; margin-bottom:16px;">Quick Links</div><div style="display:flex; flex-direction:column; gap:10px;"><a href="About Us.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">About</a><a href="Industries.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">Industries</a><a href="How We Work.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">How We Work</a><a href="FAQ.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">FAQ</a><a href="Contact.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">Contact</a></div></div>
+      <div><div style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; color:#FFFFFF; font-size:14px; margin-bottom:16px;">Solutions</div><div style="display:flex; flex-direction:column; gap:10px;"><sc-for list="{{ solutionsNav }}" as="s" hint-placeholder-count="7"><a href="{{ s.href }}" style="font-size:14px; color:rgba(255,255,255,.6);">{{ s.title }}</a></sc-for></div></div>
+      <div><div style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; color:#FFFFFF; font-size:14px; margin-bottom:16px;">Contact</div><div style="display:flex; flex-direction:column; gap:10px;"><a href="tel:+918793636312" style="font-size:14px; color:rgba(255,255,255,.6);">+91 87936 36312</a><span style="font-size:14px; color:rgba(255,255,255,.6);">Email: [Add email address]</span></div></div>
+    </div>
+    <div style="max-width:1280px; margin:0 auto; display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; padding-top:24px;">
+      <p style="font-size:12.5px; color:rgba(255,255,255,.45); margin:0;">© 2026 Shreeji Enterprises. All rights reserved. | GSTIN 27APJPB5542G1Z1 | Vasai West, Maharashtra</p>
+      <div style="display:flex; gap:20px;"><a href="Privacy Policy.dc.html" style="font-size:12.5px; color:rgba(255,255,255,.45);">Privacy Policy</a><a href="Terms.dc.html" style="font-size:12.5px; color:rgba(255,255,255,.45);">Terms</a></div>
+    </div>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;heroMotion&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Motion&quot;}}">
+const ICONS = {
+  wave: '<path d="M3 20c3-8 5 6 8-2s5 6 8-2 5 6 8-2" stroke="url(#brandGrad)" stroke-width="1.8" stroke-linecap="round" fill="none"/>',
+  gauge: '<path d="M5 26A12 12 0 0129 26" stroke="url(#brandGrad)" stroke-width="1.8" fill="none"/><path d="M17 26l7-11" stroke="url(#brandGrad)" stroke-width="1.8" stroke-linecap="round"/>',
+  probe: '<path d="M4 30L26 8" stroke="url(#brandGrad)" stroke-width="1.8" stroke-linecap="round"/><path d="M19 8h7v7" stroke="url(#brandGrad)" stroke-width="1.8" stroke-linecap="round" fill="none"/>',
+  drop: '<path d="M4 12h26M4 22h18" stroke="url(#brandGrad)" stroke-width="1.8" stroke-linecap="round"/><path d="M26 22c0 3-2.5 5-2.5 5s-2.5-2-2.5-5a2.5 2.5 0 015 0z" stroke="url(#brandGrad)" stroke-width="1.8" fill="none"/>',
+  scan: '<circle cx="14" cy="14" r="9" stroke="url(#brandGrad)" stroke-width="1.8" fill="none"/><path d="M21 21l8 8" stroke="url(#brandGrad)" stroke-width="1.8" stroke-linecap="round"/>',
+};
+function svg(key, size) { return { __html: `<svg width="${size}" height="${size}" viewBox="0 0 34 34" fill="none">${ICONS[key]}</svg>` }; }
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.canvasRef = React.createRef();
+    this.timelineRef = React.createRef();
+    this.layersSectionRef = React.createRef();
+    this.nameRef = React.createRef(); this.companyRef = React.createRef();
+    this.emailRef = React.createRef(); this.phoneRef = React.createRef();
+    this.interestRef = React.createRef(); this.detailsRef = React.createRef();
+    this.revealNodes = [];
+    this.state = {
+      scrolled: false, mobileMenuOpen: false,
+      isMobile: typeof window !== 'undefined' ? window.innerWidth < 1040 : false,
+      riskStacked: typeof window !== 'undefined' ? window.innerWidth < 760 : false,
+      solutionsOpen: false, timelineInView: false,
+      reducedMotion: typeof window !== 'undefined' && window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)').matches : false,
+      activeLayer: 0, layerAutoLock: false, openFaq: 0, formSubmitted: false, submitting: false, formError: '',
+      nameInvalid: false, emailInvalid: false, phoneInvalid: false,
+      lightningMode: 'compensation', boltPhase: 0,
+      faultActive: false,
+    };
+  }
+
+  componentDidMount() {
+    this.onScroll = () => {
+      if (this.scrollTicking) return;
+      this.scrollTicking = true;
+      requestAnimationFrame(() => {
+        this.setState({ scrolled: window.scrollY > 10 });
+        this.updateLayerSelection();
+        this.scrollTicking = false;
+      });
+    };
+    this.onResize = () => this.setState({ isMobile: window.innerWidth < 1040, riskStacked: window.innerWidth < 760 });
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    window.addEventListener('resize', this.onResize);
+    this.updateLayerSelection();
+
+    if (this.timelineRef.current) {
+      this.tObserver = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) { this.setState({ timelineInView: true }); this.tObserver.disconnect(); }
+      }, { threshold: 0.25 });
+      this.tObserver.observe(this.timelineRef.current);
+    }
+
+    this.revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('in'); this.revealObserver.unobserve(entry.target); } });
+    }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+    this.revealNodes.forEach(n => n && this.revealObserver.observe(n));
+    this.safetyTimer = setTimeout(() => {
+      this.revealNodes.forEach(n => n && n.classList.add('in'));
+    }, 2500);
+
+    if (!this.state.lightningMode) this.setState({ lightningMode: 'compensation' });
+    this.boltTimer = setInterval(() => {
+      if (this.state.lightningMode === 'conventional' && !this.state.reducedMotion) {
+        this.setState(s => ({ boltPhase: (s.boltPhase + 1) % 60 }));
+      }
+    }, 50);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('resize', this.onResize);
+    if (this.tObserver) this.tObserver.disconnect();
+    if (this.revealObserver) this.revealObserver.disconnect();
+    if (this.safetyTimer) clearTimeout(this.safetyTimer);
+    if (this.boltTimer) clearInterval(this.boltTimer);
+    if (this.rafId) cancelAnimationFrame(this.rafId);
+    window.removeEventListener('resize', this.resizeCanvas);
+  }
+
+  updateLayerSelection() {
+    const el = this.layersSectionRef.current;
+    if (!el) return;
+    const rect = el.getBoundingClientRect();
+    const vh = window.innerHeight;
+    // progress 0 when section top hits bottom of viewport, 1 when section bottom hits top of viewport
+    const total = rect.height + vh;
+    const progress = Math.min(1, Math.max(0, (vh - rect.top) / total));
+    const idx = Math.min(3, Math.max(0, Math.floor(progress * 4)));
+    if (progress > 0.03 && progress < 0.97 && idx !== this.state.activeLayer) {
+      this.setState({ activeLayer: idx });
+    }
+  }
+
+  setupCanvas() {
+    const canvas = this.canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    let w = 0, h = 0;
+    this.pointer = { x: -9999, y: -9999 };
+    const resize = () => {
+      const parent = canvas.parentElement;
+      w = parent.clientWidth; h = parent.clientHeight;
+      canvas.width = w * dpr; canvas.height = h * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    };
+    this.resizeCanvas = resize;
+    resize();
+    window.addEventListener('resize', resize);
+    const hasFinePointer = window.matchMedia && window.matchMedia('(pointer: fine)').matches;
+    if (hasFinePointer) {
+      canvas.parentElement.addEventListener('mousemove', (e) => {
+        const r = canvas.parentElement.getBoundingClientRect();
+        this.pointer = { x: e.clientX - r.left, y: e.clientY - r.top };
+      });
+      canvas.parentElement.addEventListener('mouseleave', () => { this.pointer = { x: -9999, y: -9999 }; });
+    }
+    const lineCount = 7;
+    let t = 0;
+    const draw = () => {
+      ctx.clearRect(0, 0, w, h);
+      const cx = w * 0.72, cy = h * 0.42;
+      for (let i = 0; i < lineCount; i++) {
+        const baseR = 60 + i * 26;
+        ctx.beginPath();
+        for (let a = 0; a <= 64; a++) {
+          const ang = (a / 64) * Math.PI * 2;
+          let r = baseR + Math.sin(ang * 3 + t * 0.4 + i) * 6;
+          let px = cx + Math.cos(ang) * r;
+          let py = cy + Math.sin(ang) * r * 0.75;
+          const dx = px - this.pointer.x, dy = py - this.pointer.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 140) { const push = (140 - dist) / 140 * 18; px += (dx / (dist || 1)) * push; py += (dy / (dist || 1)) * push; }
+          if (a === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
+        }
+        ctx.strokeStyle = `rgba(${58 + i * 8},${158 - i * 6},${150 + i * 10},${0.18 - i * 0.015})`;
+        ctx.lineWidth = 1;
+        ctx.stroke();
+      }
+      t += 1;
+      this.rafId = requestAnimationFrame(draw);
+    };
+    if (this.state.reducedMotion) {
+      draw(); // one static frame
+    } else {
+      this.rafId = requestAnimationFrame(draw);
+    }
+  }
+
+  validateForm() {
+    const name = this.nameRef.current.value.trim();
+    const email = this.emailRef.current.value.trim();
+    const phone = this.phoneRef.current.value.trim();
+    const emailOk = /\S+@\S+\.\S+/.test(email);
+    const phoneOk = phone.replace(/\D/g, '').length >= 10;
+    const nameInvalid = name.length === 0;
+    const emailInvalid = !emailOk;
+    const phoneInvalid = !phoneOk;
+    this.setState({ nameInvalid, emailInvalid, phoneInvalid });
+    if (nameInvalid || emailInvalid || phoneInvalid) {
+      this.setState({ formError: 'Please fill your name, a valid email and phone number.' });
+      return false;
+    }
+    this.setState({ formError: '' });
+    return true;
+  }
+
+  renderVals() {
+    const { scrolled, mobileMenuOpen, isMobile, riskStacked, solutionsOpen, timelineInView, reducedMotion, activeLayer, openFaq,
+      formSubmitted, submitting, formError, nameInvalid, emailInvalid, phoneInvalid, lightningMode, boltPhase, faultActive } = this.state;
+    const heroMotion = this.props.heroMotion ?? true;
+    const allowMotion = heroMotion && !reducedMotion;
+
+    const reveal = (el) => { if (el && !this.revealNodes.includes(el)) this.revealNodes.push(el); return el; };
+
+    const headerStyle = {
+      position: 'fixed', top: isMobile ? '12px' : (scrolled ? '10px' : '18px'), left: '50%', transform: 'translateX(-50%)',
+      width: isMobile ? 'calc(100% - 24px)' : 'min(1200px, calc(100% - 48px))', zIndex: 100, borderRadius: '100px',
+      background: '#FFFFFF', border: '1px solid #D6E4E1',
+      boxShadow: scrolled ? '0 14px 34px rgba(6,31,42,.14)' : '0 4px 16px rgba(6,31,42,.06)', transition: 'all .3s ease',
+    };
+    const headerPad = scrolled && !isMobile ? '8px 20px' : '12px 20px';
+    const logoHeight = scrolled && !isMobile ? '30px' : '36px';
+
+    const solutionsNav = [
+      { title: 'Lightning Protection', desc: 'Strike and surge protection', href: 'Lightning Protection.dc.html' },
+      { title: 'Medical Safety & Hospital Power', desc: 'Isolated power for critical care', href: 'Medical Safety.dc.html' },
+      { title: 'Electrical Safety & Insulation Monitoring', desc: 'Early fault warning', href: 'Electrical Safety Monitoring.dc.html' },
+      { title: 'Transformer, Switchgear & Machine Monitoring', desc: 'Asset condition monitoring', href: 'Transformer Switchgear Monitoring.dc.html' },
+      { title: 'Testing, Measuring & Cable Fault Instruments', desc: 'Commissioning and fault finding', href: 'Testing Measuring Instruments.dc.html' },
+      { title: 'Oil, Gas, Pipeline & Aviation Fuel Systems', desc: 'Leak and tightness monitoring', href: 'Oil Gas Aviation Fuel.dc.html' },
+      { title: 'Security & Inspection Instruments', desc: 'Handheld chemical identification', href: 'Security Inspection Instruments.dc.html' },
+    ];
+    const mobileNavItems = [
+      { label: 'Home', href: 'index.html', delay: '0.05s' }, { label: 'About', href: 'About Us.dc.html', delay: '0.1s' },
+      { label: 'Industries', href: 'Industries.dc.html', delay: '0.3s' }, { label: 'How We Work', href: 'How We Work.dc.html', delay: '0.35s' },
+      { label: 'FAQ', href: 'FAQ.dc.html', delay: '0.4s' }, { label: 'Contact', href: 'Contact.dc.html', delay: '0.45s' },
+    ];
+
+    const smallTiles = [
+      { title: 'Electrical Safety & Insulation Monitoring', desc: 'Early warning of insulation faults and leakage currents.', href: 'Electrical Safety Monitoring.dc.html', iconHtml: svg('wave', 34), caption: 'Photo: insulation monitor display — 16:9' },
+      { title: 'Transformer, Switchgear & Machine Monitoring', desc: 'Online condition monitoring for critical electrical assets.', href: 'Transformer Switchgear Monitoring.dc.html', iconHtml: svg('gauge', 34), caption: 'Photo: transformer with sensors — 16:9' },
+      { title: 'Testing, Measuring & Cable Fault Instruments', desc: 'Tools for commissioning, inspection and fault finding.', href: 'Testing Measuring Instruments.dc.html', iconHtml: svg('probe', 34), caption: 'Photo: cable fault locator in use — 16:9' },
+      { title: 'Oil, Gas, Pipeline & Aviation Fuel Systems', desc: 'Leak and tightness monitoring for fuel infrastructure.', href: 'Oil Gas Aviation Fuel.dc.html', iconHtml: svg('drop', 34), caption: 'Photo: pipeline field inspection — 16:9' },
+      { title: 'Security & Inspection Instruments', desc: 'Handheld chemical identification for enforcement agencies.', href: 'Security Inspection Instruments.dc.html', iconHtml: svg('scan', 34), caption: 'Photo: handheld analyser in use — 16:9' },
+    ];
+
+    const lightningChips = [
+      { title: 'Passive operation', desc: 'No external power supply needed.' },
+      { title: 'Continuous compensation', desc: 'Balances the surrounding electric field at all times.' },
+      { title: 'Prevention first', desc: 'Aims to prevent the strike instead of absorbing its full current.' },
+      { title: 'Gentler on equipment', desc: 'Designed to reduce destructive thermal, electrodynamic and electromagnetic effects.' },
+      { title: 'Low maintenance', desc: 'Periodic inspection is all that is typically required.' },
+    ];
+    const lightningConventional = lightningMode === 'conventional';
+    const boltOpacity = lightningConventional ? (boltPhase < 10 ? 1 : (boltPhase < 40 ? 0 : 0)) : 0;
+    const rippleOpacity = lightningConventional ? (boltPhase >= 10 && boltPhase < 40 ? 0.8 : 0) : 0;
+
+    const medicalGoals = [
+      { title: 'High availability', desc: 'Electrical supply continues after a first fault.' },
+      { title: 'Protection against shock', desc: 'The right protective measures, particularly under fault conditions.' },
+      { title: 'Reliable equipment safety', desc: 'No unexpected loss of supply to life-supporting devices.' },
+    ];
+
+    const layerData = [
+      { title: 'Lightning protector', desc: 'Direct protection for the structure.', radius: 60 },
+      { title: 'Ground filter and down-conductor connector', desc: 'Control of high-frequency surges.', radius: 95 },
+      { title: 'Correct earthing and equipotential bonding', desc: 'A safe path and stable reference for fault energy.', radius: 130 },
+      { title: 'Surge protective devices', desc: 'Protection on power and data lines.', radius: 150 },
+    ];
+    const layers = layerData.map((l, i) => {
+      const active = i === activeLayer;
+      return { ...l, i, i2: i + 1, active, bg: active ? '#FFFFFF' : 'transparent', borderColor: active ? '#3A9E22' : '#D6E4E1', numColor: active ? '#0A4FB0' : '#A9BDBE', strokeWidth: active ? 3 : 1, ringOpacity: active ? 1 : 0.25, onHover: () => this.setState({ activeLayer: i }) };
+    });
+
+    const glanceStats = [{ label: 'Solution areas', value: '7' }, { label: 'Sectors served', value: '12' }, { label: 'Process steps', value: '7' }];
+
+    const whyChoose = [
+      { title: 'Application-led advice', desc: 'We begin with your risk and site conditions, not with a product catalogue.' },
+      { title: 'Healthcare focus', desc: 'Specialised knowledge of isolated power and critical-care requirements.' },
+      { title: 'Preventive mindset', desc: 'Early-warning technologies that reduce downtime, fire risk and repair cost.' },
+      { title: 'Clear communication', desc: 'Plain-language explanations for managers and detailed data for engineers.' },
+      { title: 'Transparent business', desc: 'GST-registered, with proper documentation and invoicing.' },
+      { title: 'Responsive support', desc: 'A direct line to our team for questions before and after purchase.' },
+    ];
+
+    const industries = ['Healthcare', 'Power Generation & Distribution', 'Renewable Energy', 'Oil & Gas', 'Aviation & Airports', 'Telecommunications', 'Marine & Offshore', 'Process Industry', 'Plant Engineering', 'Transport & Infrastructure', 'Electric Mobility', 'Government & Enforcement'];
+    const featuredSectors = ['Healthcare', 'Power', 'Telecom', 'Marine'];
+
+    const processDescs = [
+      'You describe your site, system and concern by phone, email or the enquiry form.',
+      'We review the application, voltage system, environment and applicable standards.',
+      'We propose suitable products and, where needed, a layout or protection design.',
+      'You receive a clear, itemised quotation with specifications.',
+      'Products are delivered with datasheets and installation guidance.',
+      'We assist your team or contractor during installation and start-up.',
+      'Ongoing technical support, spares and upgrade advice.',
+    ];
+    const processSteps = ['Enquiry', 'Assessment', 'Recommendation', 'Quotation', 'Supply', 'Commissioning support', 'After-sales care'].map((label, i) => ({ label, n: i + 1, desc: processDescs[i] }));
+
+    const faqData = [
+      { q: 'How can I get a quotation?', a: 'Call +91 87936 36312 or send us your requirement through the enquiry form. We will review it and respond with a quotation.' },
+      { q: 'Do you supply across India?', a: 'Yes. We are based in Vasai, Maharashtra, and can supply to customers in other states on request.' },
+      { q: 'Do you provide installation and commissioning support?', a: 'We provide technical guidance during installation and start-up, and can coordinate with your electrical contractor.' },
+      { q: 'Will I receive datasheets and compliance documents?', a: 'Yes. Datasheets, test reports and compliance documents for the exact model supplied are available on request.' },
+    ];
+    const faqs = faqData.map((f, i) => {
+      const open = openFaq === i;
+      return { ...f, i, open, maxHeight: open ? '200px' : '0', rotate: open ? 'rotate(45deg)' : 'rotate(0deg)', toggle: () => this.setState(s => ({ openFaq: s.openFaq === i ? -1 : i })) };
+    });
+
+    const risksData = [
+      { title: 'The fault you cannot see', desc: 'An insulation fault can grow silently into a shutdown, a fire or a danger to life, long before anyone notices.', caption: 'Photo: insulation monitor alarm panel — 4:3', iconHtml: { __html: '<path d="M6 24c6-10 10 10 16 0s10 10 16 0" stroke="url(#brandGrad)" stroke-width="2" stroke-linecap="round" fill="none"/>' } },
+      { title: 'The strike you cannot stop', desc: 'A lightning surge can destroy electronics in a fraction of a second, even when the building itself is untouched.', caption: 'Photo: lightning over a tower at night — 4:3', iconHtml: { __html: '<path d="M22 6l-9 18h8l-4 18 15-22h-9l6-14z" stroke="url(#brandGrad)" stroke-width="2" stroke-linejoin="round" fill="none"/>' } },
+      { title: 'The second you cannot afford', desc: 'In a hospital, a power interruption in an operating theatre can put a patient at risk.', caption: 'Photo: operating theatre ceiling pendant — 4:3', iconHtml: { __html: '<circle cx="24" cy="24" r="17" stroke="url(#brandGrad)" stroke-width="2" fill="none"/><path d="M24 14v10l8 5" stroke="url(#brandGrad)" stroke-width="2" stroke-linecap="round" fill="none"/>' } },
+    ];
+    const risks = risksData;
+
+    return {
+      headerStyle, headerPad, logoHeight, isMobile, riskStacked, mobileMenuOpen, solutionsOpen, allowMotion, reducedMotion,
+      toggleMobileMenu: () => this.setState(s => ({ mobileMenuOpen: !s.mobileMenuOpen })),
+      openSolutions: () => this.setState({ solutionsOpen: true }), closeSolutions: () => this.setState({ solutionsOpen: false }),
+      solutionsNav, mobileNavItems, smallTiles, lightningChips, lightningConventional, boltOpacity, rippleOpacity,
+      setLightningMode: (m) => () => this.setState({ lightningMode: m }),
+      modeConventionalBg: lightningMode === 'conventional' ? '#FFFFFF' : 'transparent', modeConventionalColor: lightningMode === 'conventional' ? '#0C2530' : '#4F6A70',
+      modeCompensationBg: lightningMode === 'compensation' ? '#FFFFFF' : 'transparent', modeCompensationColor: lightningMode === 'compensation' ? '#0C2530' : '#4F6A70',
+      medicalGoals, faultActive, faultAnim: faultActive ? 'pulseLine 1s ease-in-out infinite' : 'none',
+      insulationColor: faultActive ? '#E8A33D' : '#2F5A4A', insulationLabel: faultActive ? 'FAULT DETECTED' : 'Normal',
+      simulateFault: () => { this.setState({ faultActive: true }); clearTimeout(this.faultTimer); this.faultTimer = setTimeout(() => this.setState({ faultActive: false }), 4000); },
+      layers, glanceStats, whyChoose, industries, industriesDouble: industries.concat(industries),
+      featuredSectors, processSteps, timelineRef: this.timelineRef, timelineWidth: timelineInView ? '100%' : '0%',
+      risks,
+      layersSectionRef: this.layersSectionRef,
+      faqs, canvasRef: this.canvasRef, reveal,
+      nameRef: this.nameRef, companyRef: this.companyRef, emailRef: this.emailRef, phoneRef: this.phoneRef, interestRef: this.interestRef, detailsRef: this.detailsRef,
+      nameErrClass: `fi${nameInvalid ? ' err' : ''}`, emailErrClass: `fi${emailInvalid ? ' err' : ''}`, phoneErrClass: `fi${phoneInvalid ? ' err' : ''}`,
+      formSubmitted, submitting, formError, submitLabel: submitting ? 'Sending…' : 'Send My Enquiry', submitOpacity: submitting ? 0.7 : 1,
+      submitForm: (e) => {
+        e.preventDefault();
+        if (!this.validateForm()) return;
+        this.setState({ submitting: true });
+        setTimeout(() => this.setState({ submitting: false, formSubmitted: true }), 900);
+      },
+    };
+  }
+}
+
+</script>
+</body>
+</html>

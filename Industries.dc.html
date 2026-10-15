@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Industries We Serve | Healthcare, Power, Oil &amp; Gas | Shreeji</title>
+  <meta name="description" content="Electrical safety and monitoring for healthcare, power, renewable energy, oil and gas, aviation, telecom, marine, rail and more. See how Shreeji helps." />
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="icon" href="./assets/favicon-32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=Albert+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { margin: 0; background: #F2F7F6; font-family: 'Albert Sans', sans-serif; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+    a { color: #0A4FB0; text-decoration: none; }
+    a:hover { color: #3A9E22; }
+    * { box-sizing: border-box; }
+    *:focus-visible { outline: 2px solid #3A9E22; outline-offset: 2px; }
+    html:not(.js) .reveal { opacity: 1 !important; transform: none !important; }
+    .reveal { opacity: 0; transform: translateY(26px); transition: opacity .75s cubic-bezier(.22,1,.36,1), transform .75s cubic-bezier(.22,1,.36,1); }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+    @media (prefers-reduced-motion: reduce) { .reveal { transition-duration: .35s; transform: none; } }
+    .btn-magnetic { transition: transform .25s cubic-bezier(.22,1,.36,1), box-shadow .25s; }
+    @media (hover: hover) { .btn-magnetic:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(10,79,176,.35); } }
+    .btn-outline { transition: background .25s, border-color .25s, transform .25s; }
+    @media (hover: hover) { .btn-outline:hover { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.6) !important; transform: translateY(-2px); } }
+    .ind-card { transition: border-color .25s, transform .25s; cursor: pointer; }
+    @media (hover: hover) { .ind-card:hover { border-color: #3A9E22 !important; transform: translateY(-3px); } }
+    .icon-btn { transition: transform .2s, border-color .2s; }
+    @media (hover: hover) { .icon-btn:hover { transform: scale(1.08); border-color: #3A9E22 !important; } }
+    .fab-btn { transition: transform .25s cubic-bezier(.22,1,.36,1), box-shadow .25s; }
+    @media (hover: hover) { .fab-btn:hover { transform: translateY(-3px) scale(1.05); } }
+  </style>
+</helmet>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+  <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3A9E22" /><stop offset="0.5" stop-color="#0C9084" /><stop offset="1" stop-color="#0A4FB0" /></linearGradient>
+</defs></svg>
+
+<div style="position:relative; max-width:1920px; margin:0 auto; background:#F2F7F6;">
+
+  <header style="{{ headerStyle }}">
+    <div style="display:flex; align-items:center; justify-content:space-between; gap:20px; padding:{{ headerPad }};">
+      <a href="index.html" style="display:flex; align-items:center; flex-shrink:0;"><img src="./assets/logo-light.png" alt="Shreeji Enterprises" style="height:{{ logoHeight }}; width:auto; display:block; transition:height .3s;" /></a>
+      <sc-if value="{{ !isMobile }}" hint-placeholder-val="{{ true }}">
+        <nav style="display:flex; align-items:center; gap:18px; flex-wrap:nowrap;">
+          <a href="index.html" style="font-size:14px; font-weight:500; color:#0C2530;">Home</a>
+          <a href="About Us.dc.html" style="font-size:14px; font-weight:500; color:#0C2530;">About</a>
+          <div style="position:relative;" onMouseEnter="{{ openSolutions }}" onMouseLeave="{{ closeSolutions }}">
+            <a href="Solutions Overview.dc.html" style="font-size:14px; font-weight:500; color:#0C2530; cursor:pointer; display:flex; align-items:center; gap:4px;">Solutions <span style="font-size:10px;">▾</span></a>
+            <sc-if value="{{ solutionsOpen }}" hint-placeholder-val="{{ false }}">
+              <div style="position:absolute; top:28px; left:50%; transform:translateX(-50%); background:#FFFFFF; border:1px solid #D6E4E1; border-radius:20px; padding:14px; width:440px; box-shadow:0 24px 60px rgba(6,31,42,.16); z-index:50; display:grid; grid-template-columns:1fr 1fr; gap:4px;">
+                <sc-for list="{{ solutionsNav }}" as="s" hint-placeholder-count="7">
+                  <a href="{{ s.href }}" style="display:flex; gap:10px; align-items:flex-start; padding:10px; border-radius:12px;">
+                    <span style="flex-shrink:0; width:32px; height:32px; border-radius:8px; background:linear-gradient(135deg, rgba(58,158,34,.22), rgba(10,79,176,.26));"></span>
+                    <span><span style="display:block; font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:13px; color:#0C2530;">{{ s.title }}</span><span style="display:block; font-size:11.5px; color:#4F6A70; margin-top:2px;">{{ s.desc }}</span></span>
+                  </a>
+                </sc-for>
+              </div>
+            </sc-if>
+          </div>
+          <a href="Industries.dc.html" style="font-size:14px; font-weight:700; color:#0A4FB0;">Industries</a>
+          <a href="How We Work.dc.html" style="font-size:14px; font-weight:500; color:#0C2530;">How We Work</a>
+          <a href="FAQ.dc.html" style="font-size:14px; font-weight:500; color:#0C2530;">FAQ</a>
+          <a href="Contact.dc.html" style="font-size:14px; font-weight:500; color:#0C2530;">Contact</a>
+        </nav>
+      </sc-if>
+      <div style="display:flex; align-items:center; gap:16px; flex-shrink:0;">
+        <sc-if value="{{ !isMobile }}" hint-placeholder-val="{{ true }}"><a href="tel:+918793636312" style="font-size:14px; font-weight:600; color:#0C2530;">+91 87936 36312</a></sc-if>
+        <sc-if value="{{ !isMobile }}" hint-placeholder-val="{{ true }}"><a href="Contact.dc.html" class="btn-magnetic" style="display:inline-block; padding:11px 24px; border-radius:100px; background:linear-gradient(90deg,#3A9E22,#0A4FB0); color:#fff; font-weight:600; font-size:14px;">Get a Quote</a></sc-if>
+        <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+          <button onClick="{{ toggleMobileMenu }}" aria-label="Open menu" class="icon-btn" style="width:40px; height:40px; border-radius:50%; border:1px solid #D6E4E1; background:transparent; display:flex; align-items:center; justify-content:center; cursor:pointer;">
+            <svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M0 1H18M0 7H18M0 13H18" stroke="#0C2530" stroke-width="1.6" stroke-linecap="round" /></svg>
+          </button>
+        </sc-if>
+      </div>
+    </div>
+  </header>
+
+  <sc-if value="{{ mobileMenuOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed; inset:0; background:#061F2A; z-index:200; display:flex; flex-direction:column; padding:24px; overflow-y:auto;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:36px;">
+        <span style="display:inline-block; background:#fff; border-radius:14px; padding:8px 14px;"><img src="./assets/logo-light.png" alt="Shreeji Enterprises" style="height:26px; display:block;" /></span>
+        <button onClick="{{ toggleMobileMenu }}" aria-label="Close menu" class="icon-btn" style="width:40px; height:40px; border-radius:50%; border:1px solid rgba(255,255,255,.3); background:transparent; color:#fff; font-size:20px; cursor:pointer;">✕</button>
+      </div>
+      <nav style="display:flex; flex-direction:column; gap:20px;">
+        <a href="index.html" style="color:#fff; font-family:'Bricolage Grotesque', sans-serif; font-size:24px; font-weight:600;">Home</a>
+        <a href="About Us.dc.html" style="color:#fff; font-family:'Bricolage Grotesque', sans-serif; font-size:24px; font-weight:600;">About</a>
+        <a href="Solutions Overview.dc.html" style="color:#fff; font-family:'Bricolage Grotesque', sans-serif; font-size:24px; font-weight:600;">Solutions</a>
+        <sc-for list="{{ solutionsNav }}" as="s" hint-placeholder-count="7">
+          <a href="{{ s.href }}" style="color:rgba(255,255,255,.72); font-family:'Albert Sans', sans-serif; font-size:16px; font-weight:500; padding-left:16px;">{{ s.title }}</a>
+        </sc-for>
+        <a href="Industries.dc.html" style="color:#3A9E22; font-family:'Bricolage Grotesque', sans-serif; font-size:24px; font-weight:600;">Industries</a>
+        <a href="How We Work.dc.html" style="color:#fff; font-family:'Bricolage Grotesque', sans-serif; font-size:24px; font-weight:600;">How We Work</a>
+        <a href="FAQ.dc.html" style="color:#fff; font-family:'Bricolage Grotesque', sans-serif; font-size:24px; font-weight:600;">FAQ</a>
+        <a href="Contact.dc.html" style="color:#fff; font-family:'Bricolage Grotesque', sans-serif; font-size:24px; font-weight:600;">Contact</a>
+      </nav>
+      <div style="margin-top:auto; padding-top:28px; display:flex; flex-direction:column; gap:14px;">
+        <a href="tel:+918793636312" style="color:#fff; font-size:16px; font-weight:600;">+91 87936 36312</a>
+        <a href="Contact.dc.html" style="text-align:center; display:inline-block; padding:13px; border-radius:100px; background:linear-gradient(90deg,#3A9E22,#0A4FB0); color:#fff; font-weight:600; font-size:15px;">Get a Quote</a>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isMobile && !mobileMenuOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed; bottom:calc(20px + env(safe-area-inset-bottom)); right:20px; z-index:150; display:flex; flex-direction:column; gap:12px;">
+      <a href="tel:+918793636312" aria-label="Call Now" class="fab-btn" style="width:54px; height:54px; border-radius:50%; background:linear-gradient(135deg,#3A9E22,#0A4FB0); display:flex; align-items:center; justify-content:center; box-shadow:0 10px 24px rgba(6,31,42,.3);">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 3.9c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" fill="#fff"/></svg>
+      </a>
+      <a href="https://wa.me/910000000000" aria-label="WhatsApp" class="fab-btn" style="width:54px; height:54px; border-radius:50%; background:#1F8A4C; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 24px rgba(6,31,42,.3);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.4A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z" fill="#fff"/></svg>
+      </a>
+    </div>
+  </sc-if>
+
+  <!-- HERO -->
+  <section style="position:relative; background:#041620; padding:clamp(130px,16vw,170px) clamp(20px,5vw,64px) clamp(60px,8vw,90px); overflow:hidden; border-radius:0 0 32px 32px;">
+    <div style="position:absolute; top:-20%; left:-10%; width:60%; height:70%; background:radial-gradient(circle, rgba(58,158,34,.18), transparent 70%); filter:blur(60px); pointer-events:none;"></div>
+    <div style="position:absolute; bottom:-30%; right:-10%; width:60%; height:70%; background:radial-gradient(circle, rgba(10,79,176,.22), transparent 70%); filter:blur(60px); pointer-events:none;"></div>
+    <div style="position:relative; max-width:780px;">
+      <p style="font-size:13px; color:rgba(255,255,255,.5); margin:0 0 18px;"><a href="index.html" style="color:rgba(255,255,255,.5);">Home</a> / Industries</p>
+      <h1 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(2rem,4.2vw,3rem); line-height:1.18; color:#FFFFFF; margin:0 0 20px;">Protection and Monitoring for the Industries That Cannot Afford Downtime</h1>
+      <p style="font-size:clamp(1rem,1.3vw,1.1rem); line-height:1.7; color:rgba(255,255,255,.75); margin:0 0 30px;">From hospital theatres to offshore platforms, we match the technology to the risk of your sector.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:16px;">
+        <a href="Contact.dc.html" class="btn-magnetic" style="display:inline-block; padding:15px 30px; border-radius:100px; background:linear-gradient(90deg,#3A9E22,#0A4FB0); color:#fff; font-weight:600; font-size:15px;">Discuss Your Industry</a>
+        <a href="tel:+918793636312" class="btn-outline" style="display:inline-block; padding:15px 30px; border-radius:100px; border:1px solid rgba(255,255,255,.35); color:#fff; font-weight:600; font-size:15px;">Call +91 87936 36312</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRY CARDS -->
+  <section style="background:#F2F7F6; padding:clamp(70px,9vw,110px) clamp(20px,5vw,64px);">
+    <div class="reveal" ref="{{ reveal }}" style="max-width:1280px; margin:0 auto;">
+      <h2 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(1.7rem,3.2vw,2.4rem); color:#0C2530; margin:0 0 44px; max-width:600px;">How we help, sector by sector</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:20px;">
+        <sc-for list="{{ sectors }}" as="sec" hint-placeholder-count="12">
+          <a href="{{ sec.href }}" class="ind-card" style="display:block; background:#FFFFFF; border:1px solid #D6E4E1; border-radius:20px; padding:26px;">
+            <h3 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:17px; color:#0C2530; margin:0 0 10px;">{{ sec.title }}</h3>
+            <p style="font-size:14px; line-height:1.65; color:#4F6A70; margin:0;">{{ sec.desc }}</p>
+          </a>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="position:relative; background:#061F2A; margin:0 clamp(12px,2vw,24px) clamp(24px,3vw,40px); border-radius:32px; padding:clamp(60px,9vw,100px) clamp(24px,5vw,64px); overflow:hidden;">
+    <div class="reveal" ref="{{ reveal }}" style="position:relative; max-width:680px;">
+      <h2 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(1.8rem,3.4vw,2.5rem); line-height:1.25; color:#FFFFFF; margin:0 0 18px;">Don't see your industry listed?</h2>
+      <p style="font-size:15.5px; line-height:1.7; color:rgba(255,255,255,.72); margin:0 0 30px;">Electrical risk exists everywhere. Describe your application and we will tell you honestly what we can and cannot do.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:16px;">
+        <a href="Contact.dc.html" class="btn-magnetic" style="display:inline-block; padding:15px 30px; border-radius:100px; background:linear-gradient(90deg,#3A9E22,#0A4FB0); color:#fff; font-weight:600; font-size:15px;">Send an Enquiry</a>
+        <a href="tel:+918793636312" class="btn-outline" style="display:inline-block; padding:15px 30px; border-radius:100px; border:1px solid rgba(255,255,255,.35); color:#fff; font-weight:600; font-size:15px;">Call +91 87936 36312</a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#061F2A; border-radius:32px 32px 0 0; padding:clamp(50px,7vw,70px) clamp(20px,5vw,64px) 30px;">
+    <div style="max-width:1280px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:40px; padding-bottom:40px; border-bottom:1px solid rgba(255,255,255,.12);">
+      <div>
+        <span style="display:inline-block; background:#fff; border-radius:16px; padding:10px 16px; margin-bottom:18px;"><img src="./assets/logo-light.png" alt="Shreeji Enterprises" style="height:28px; display:block;" /></span>
+        <p style="font-size:14px; line-height:1.7; color:rgba(255,255,255,.55); max-width:260px; margin:0;">HF/204, Jayraj Nagar CHS, Ambadi Road, near Gokul Park, Vasai West, Vasai Virar, Palghar, Maharashtra – 401202</p>
+      </div>
+      <div><div style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; color:#FFFFFF; font-size:14px; margin-bottom:16px;">Quick Links</div><div style="display:flex; flex-direction:column; gap:10px;"><a href="About Us.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">About</a><a href="Industries.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">Industries</a><a href="How We Work.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">How We Work</a><a href="FAQ.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">FAQ</a><a href="Contact.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">Contact</a></div></div>
+      <div><div style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; color:#FFFFFF; font-size:14px; margin-bottom:16px;">Solutions</div><div style="display:flex; flex-direction:column; gap:10px;"><sc-for list="{{ solutionsNav }}" as="s" hint-placeholder-count="7"><a href="{{ s.href }}" style="font-size:14px; color:rgba(255,255,255,.6);">{{ s.title }}</a></sc-for></div></div>
+      <div><div style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; color:#FFFFFF; font-size:14px; margin-bottom:16px;">Contact</div><div style="display:flex; flex-direction:column; gap:10px;"><a href="tel:+918793636312" style="font-size:14px; color:rgba(255,255,255,.6);">+91 87936 36312</a><span style="font-size:14px; color:rgba(255,255,255,.6);">Email: [Add email address]</span></div></div>
+    </div>
+    <div style="max-width:1280px; margin:0 auto; display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; padding-top:24px;">
+      <p style="font-size:12.5px; color:rgba(255,255,255,.45); margin:0;">© 2026 Shreeji Enterprises. All rights reserved. | GSTIN 27APJPB5542G1Z1 | Vasai West, Maharashtra</p>
+      <div style="display:flex; gap:20px;"><a href="Privacy Policy.dc.html" style="font-size:12.5px; color:rgba(255,255,255,.45);">Privacy Policy</a><a href="Terms.dc.html" style="font-size:12.5px; color:rgba(255,255,255,.45);">Terms</a></div>
+    </div>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+function setupReveal(nodes) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); } });
+  }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+  nodes.forEach(n => n && observer.observe(n));
+  const timer = setTimeout(() => { nodes.forEach(n => n && n.classList.add('in')); }, 2500);
+  return () => { observer.disconnect(); clearTimeout(timer); };
+}
+const SOLUTIONS_NAV = [
+  { title: 'Lightning Protection', desc: 'Strike and surge protection', href: 'Lightning Protection.dc.html' },
+  { title: 'Medical Safety & Hospital Power', desc: 'Isolated power for critical care', href: 'Medical Safety.dc.html' },
+  { title: 'Electrical Safety & Insulation Monitoring', desc: 'Early fault warning', href: 'Electrical Safety Monitoring.dc.html' },
+  { title: 'Transformer, Switchgear & Machine Monitoring', desc: 'Asset condition monitoring', href: 'Transformer Switchgear Monitoring.dc.html' },
+  { title: 'Testing, Measuring & Cable Fault Instruments', desc: 'Commissioning and fault finding', href: 'Testing Measuring Instruments.dc.html' },
+  { title: 'Oil, Gas, Pipeline & Aviation Fuel Systems', desc: 'Leak and tightness monitoring', href: 'Oil Gas Aviation Fuel.dc.html' },
+  { title: 'Security & Inspection Instruments', desc: 'Handheld chemical identification', href: 'Security Inspection Instruments.dc.html' },
+];
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.revealNodes = [];
+    this.state = { scrolled: false, mobileMenuOpen: false, isMobile: typeof window !== 'undefined' ? window.innerWidth < 1040 : false, solutionsOpen: false };
+  }
+  componentDidMount() {
+    this.onScroll = () => this.setState({ scrolled: window.scrollY > 10 });
+    this.onResize = () => this.setState({ isMobile: window.innerWidth < 1040 });
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    window.addEventListener('resize', this.onResize);
+    this.disposeReveal = setupReveal(this.revealNodes);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('resize', this.onResize);
+    if (this.disposeReveal) this.disposeReveal();
+  }
+  renderVals() {
+    const { scrolled, mobileMenuOpen, isMobile, solutionsOpen } = this.state;
+    const reveal = (el) => { if (el && !this.revealNodes.includes(el)) this.revealNodes.push(el); return el; };
+    const headerStyle = {
+      position: 'fixed', top: isMobile ? '12px' : (scrolled ? '10px' : '18px'), left: '50%', transform: 'translateX(-50%)',
+      width: isMobile ? 'calc(100% - 24px)' : 'min(1200px, calc(100% - 48px))', zIndex: 100, borderRadius: '100px',
+      background: '#FFFFFF', border: '1px solid #D6E4E1',
+      boxShadow: scrolled ? '0 14px 34px rgba(6,31,42,.14)' : '0 4px 16px rgba(6,31,42,.06)', transition: 'all .3s ease',
+    };
+    const sectorsData = [
+      { title: 'Healthcare', desc: 'Isolated power, alarm and control systems, testers, lighting, pendants and tables for hospitals and clinics.', href: 'Medical Safety.dc.html' },
+      { title: 'Power Generation & Distribution', desc: 'Transformer, switchgear and generator monitoring; cable fault location; lightning protection for substations.', href: 'Transformer Switchgear Monitoring.dc.html' },
+      { title: 'Renewable Energy', desc: 'Insulation monitoring for solar plants, protection and monitoring for wind farms and combined heat and power units.', href: 'Electrical Safety Monitoring.dc.html' },
+      { title: 'Oil & Gas', desc: 'Leak and theft detection, gas leak cameras and electrical safety for onshore and offshore facilities, refineries and petrochemical plants.', href: 'Oil Gas Aviation Fuel.dc.html' },
+      { title: 'Aviation & Airports', desc: 'Hydrant tightness monitoring and fuel storage consulting.', href: 'Oil Gas Aviation Fuel.dc.html' },
+      { title: 'Telecommunications', desc: 'Lightning protection and surge filtering for towers and remote sites.', href: 'Lightning Protection.dc.html' },
+      { title: 'Marine & Offshore', desc: 'Vessel lightning protection and electrical safety on ships and platforms.', href: 'Lightning Protection.dc.html' },
+      { title: 'Process & Primary Industry', desc: 'Insulation and residual current monitoring for continuous plants.', href: 'Electrical Safety Monitoring.dc.html' },
+      { title: 'Mechanical & Plant Engineering', desc: 'Safety monitoring for drives, conveyors, cranes, robots, welding and food and packaging machinery.', href: 'Testing Measuring Instruments.dc.html' },
+      { title: 'Transport & Infrastructure', desc: 'Railways, roads, bridges, tunnels, traffic systems and logistics facilities.', href: 'Electrical Safety Monitoring.dc.html' },
+      { title: 'Electric Mobility', desc: 'Safety electronics for EV charging points.', href: 'Electrical Safety Monitoring.dc.html' },
+      { title: 'Government & Enforcement', desc: 'Inspection and identification instruments for customs and police.', href: 'Security Inspection Instruments.dc.html' },
+    ];
+    const sectors = sectorsData;
+    return {
+      headerStyle, headerPad: scrolled && !isMobile ? '8px 20px' : '12px 20px', logoHeight: scrolled && !isMobile ? '30px' : '36px',
+      isMobile, mobileMenuOpen, solutionsOpen,
+      toggleMobileMenu: () => this.setState(s => ({ mobileMenuOpen: !s.mobileMenuOpen })),
+      openSolutions: () => this.setState({ solutionsOpen: true }), closeSolutions: () => this.setState({ solutionsOpen: false }),
+      solutionsNav: SOLUTIONS_NAV, reveal, sectors,
+    };
+  }
+}
+
+</script>
+</body>
+</html>

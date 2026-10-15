@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Page Not Found | Shreeji Enterprises</title>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="icon" href="./assets/favicon-32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Albert+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    body { margin: 0; background: #041620; font-family: 'Albert Sans', sans-serif; overflow-x: clip; }
+    a { color: #3A9E22; text-decoration: none; }
+    a:hover { color: #0C9084; }
+    * { box-sizing: border-box; }
+    .btn-magnetic { transition: transform .25s, box-shadow .25s; }
+    @media (hover: hover) { .btn-magnetic:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(10,79,176,.35); } }
+  </style>
+</helmet>
+<svg width="0" height="0" style="position:absolute"><defs>
+  <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3A9E22" /><stop offset="0.5" stop-color="#0C9084" /><stop offset="1" stop-color="#0A4FB0" /></linearGradient>
+</defs></svg>
+<div style="min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:40px; position:relative; overflow:hidden;">
+  <div style="position:absolute; top:-20%; left:-10%; width:60%; height:70%; background:radial-gradient(circle, rgba(58,158,34,.16), transparent 70%); filter:blur(60px); pointer-events:none;"></div>
+  <div style="position:relative;">
+    <div style="font-family:'Bricolage Grotesque', sans-serif; font-weight:700; font-size:clamp(4rem,12vw,8rem); background:linear-gradient(90deg,#3A9E22,#0C9084,#0A4FB0); -webkit-background-clip:text; background-clip:text; color:transparent; line-height:1;">404</div>
+    <h1 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(1.4rem,2.6vw,2rem); color:#FFFFFF; margin:16px 0;">This page could not be found</h1>
+    <p style="font-size:15px; color:rgba(255,255,255,.65); max-width:420px; margin:0 auto 32px;">The page you are looking for may have moved or no longer exists.</p>
+    <a href="index.html" class="btn-magnetic" style="display:inline-block; padding:15px 30px; border-radius:100px; background:linear-gradient(90deg,#3A9E22,#0A4FB0); color:#fff; font-weight:600; font-size:15px;">Back to Home</a>
+  </div>
+</div>
+
+</x-dc>
+</body>
+</html>
