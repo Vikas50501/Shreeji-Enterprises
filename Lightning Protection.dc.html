@@ -203,7 +203,7 @@
     <div class="reveal" ref="{{ reveal }}" style="max-width:1280px; margin:0 auto;">
       <h2 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(1.7rem,3.2vw,2.4rem); color:#0C2530; margin:0 0 36px; max-width:700px;">Choose the protector that fits your structure</h2>
       <div class="gallery">
-        <sc-for list="{{ protectors }}" as="p" hint-placeholder-count="8">
+        <sc-for list="{{ protectors }}" as="p" hint-placeholder-count="15">
           <div class="gallery-card" style="background:#F2F7F6; border:1px solid #D6E4E1; border-radius:22px; padding:26px;">
             <div style="aspect-ratio:4/3; border-radius:14px; background:linear-gradient(135deg, rgba(58,158,34,.16), rgba(10,79,176,.2)); display:flex; align-items:center; justify-content:center; padding:12px; text-align:center; margin-bottom:18px;"><span style="font-size:11px; color:#4F6A70; font-style:italic;">Photo: {{ p.title }} — 4:3</span></div>
             <h3 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:16px; color:#0C2530; margin:0 0 8px;">{{ p.title }}</h3>
@@ -391,6 +391,13 @@ class Component extends DCLogic {
       { title: 'High-Vibration / Anti-Fall Version', desc: 'A reinforced design with additional fixing to prevent dislodging on vibrating structures.', apps: ['Drilling derricks', 'Towers'] },
       { title: 'Advanced Material Version', desc: 'A premium model using advanced carbon-based material properties for specialised applications.', apps: ['Specialised installations'] },
       { title: 'Twin High-Load Version', desc: 'A high-performance unit for extreme electric field conditions and high electrical load environments.', apps: ['High-load industrial sites'] },
+      { title: 'DDCE 50plus', desc: 'Field-compensation protector for general ground-based structures, with coverage up to about 60 m where local codes permit.', apps: ['Buildings', 'Warehouses', 'Plants'] },
+      { title: 'DDCE 100 plus', desc: 'Higher-capacity field-compensation protector that reduces indirect electromagnetic pulse damage, with coverage up to about 120 m where codes permit.', apps: ['Large buildings', 'Industrial plants', 'Towers'] },
+      { title: 'DDCE Marine', desc: 'A passive protector for ships and offshore vessels that balances the surrounding electric field to prevent an upward strike from forming.', apps: ['Ships', 'Offshore vessels'] },
+      { title: 'DDCE Chemical', desc: 'A protector variant built for saline and corrosive environments, offered in multiple coverage classes to suit different site sizes.', apps: ['Chemical plants', 'Coastal sites', 'Refineries'] },
+      { title: 'DDCE 100 plus UL', desc: 'The 120 m class protector in a UL-listed air-terminal configuration, for projects built to US standards.', apps: ['US-standard projects'] },
+      { title: 'Dinfil Ground Filter', desc: 'A high-reactance filter that blocks high-frequency, earth-induced surges before they reach protected equipment.', apps: ['All structure types'] },
+      { title: 'Dinco Connector', desc: 'A connector that limits high-frequency induced surges on the cable running down from the protector.', apps: ['Low-exposure installations'] },
     ];
     const layerData = [
       { title: 'Lightning protector', desc: 'Direct protection for the structure.', radius: 60 },
