@@ -322,11 +322,11 @@
 
   <!-- 06 MEDICAL SPOTLIGHT -->
   <section style="background:#061F2A; padding:clamp(70px,9vw,110px) clamp(20px,5vw,64px);">
-    <div class="reveal" ref="{{ reveal }}" style="max-width:1200px; margin:0 auto;">
+    <div class="reveal" ref="{{ reveal }}" style="max-width:1200px; margin:0 auto; text-align:left;">
       <h2 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(1.5rem,2.8vw,2.1rem); color:#FFFFFF; margin:0 0 10px; max-width:640px;">Electrical safety for patients and staff</h2>
       <p style="font-size:15px; color:rgba(255,255,255,.6); margin:0 0 32px; max-width:620px;">Meeting <strong style="color:#fff;">IEC 60364-7-710</strong> for medically used rooms means achieving three things together.</p>
 
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:20px; align-items:start; margin-bottom:36px;">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(240px,100%),1fr)); gap:20px; align-items:start; margin-bottom:36px;">
         <div style="grid-column:1 / -1; background:#08232F; border:1px solid #0E3240; border-radius:20px; padding:26px; display:flex; flex-wrap:wrap; gap:24px; align-items:center; justify-content:space-between;">
           <div style="display:flex; gap:28px; flex-wrap:wrap;">
             <div><div style="font-size:12px; color:rgba(255,255,255,.5); margin-bottom:6px;">Supply</div><div style="display:flex; align-items:center; gap:8px;"><span style="width:10px; height:10px; border-radius:50%; background:#3A9E22; box-shadow:0 0 12px #3A9E22;"></span><span style="font-size:14px; font-weight:600; color:#fff;">ON</span></div></div>
@@ -337,16 +337,16 @@
         </div>
       </div>
 
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:22px; margin-bottom:40px;">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(240px,100%),1fr)); gap:22px; margin-bottom:40px;">
         <sc-for list="{{ medicalGoals }}" as="g" hint-placeholder-count="3">
-          <div class="glow-card" style="border:1px solid #0E3240; border-radius:20px; padding:28px; background:#08232F;">
+          <div class="glow-card" style="border:1px solid #0E3240; border-radius:20px; padding:28px; background:#08232F; text-align:left;">
             <svg width="90" height="20" viewBox="0 0 90 20" fill="none" style="margin-bottom:16px;"><path d="M0 10h20l5-8 6 16 5-12 4 4h50" stroke="url(#brandGrad)" stroke-width="1.5" style="animation:pulseLine 2.4s ease-in-out infinite;"/></svg>
             <h3 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:17px; color:#FFFFFF; margin:0 0 8px;">{{ g.title }}</h3>
             <p style="font-size:14px; color:rgba(255,255,255,.6); line-height:1.6; margin:0;">{{ g.desc }}</p>
           </div>
         </sc-for>
       </div>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:40px; align-items:center;">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(280px,100%),1fr)); gap:40px; align-items:center;">
         <div style="aspect-ratio:16/9; border-radius:20px; overflow:hidden; border:1px solid #0E3240;"><img src="./assets/Homepage%20images/Electrical%20safety%20for%20patients%20and%20staff.png" alt="Operating theatre with ceiling-mounted surgical lights and monitors" style="width:100%; height:100%; object-fit:cover; display:block;" /></div>
         <a href="Medical Safety.dc.html" class="btn-magnetic" style="justify-self:start; display:inline-block; padding:14px 28px; border-radius:100px; background:linear-gradient(90deg,#3A9E22,#0A4FB0); color:#fff; font-weight:600; font-size:14.5px;">Explore Medical Safety →</a>
       </div>
