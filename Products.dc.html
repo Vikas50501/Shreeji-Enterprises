@@ -141,7 +141,7 @@
       <h2 style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:clamp(1.7rem,3.2vw,2.4rem); color:#0C2530; margin:0 0 12px; max-width:700px;">Lightning Protection Range</h2>
       <p style="font-size:15px; color:#4F6A70; margin:0 0 36px; max-width:640px;">Passive field-compensation protectors and surge-companion products for structures, plants and vessels.</p>
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(260px,100%),1fr)); gap:22px;">
-        <sc-for list="{{ products }}" as="p" hint-placeholder-count="15">
+        <sc-for list="{{ products }}" as="p" hint-placeholder-count="7">
           <div class="product-card" style="background:#F2F7F6; border:1px solid #D6E4E1; border-radius:22px; padding:26px; text-align:left;">
             <sc-if value="{{ p.img }}" hint-placeholder-val="{{ false }}">
               <div style="aspect-ratio:4/3; border-radius:14px; overflow:hidden; margin-bottom:18px;"><img src="{{ p.img }}" alt="{{ p.title }}" style="width:100%; height:100%; object-fit:contain; background:#FFFFFF; display:block;" /></div>
@@ -182,7 +182,7 @@
       </div>
       <div><div style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; color:#FFFFFF; font-size:14px; margin-bottom:16px;">Quick Links</div><div style="display:flex; flex-direction:column; gap:10px;"><a href="About Us.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">About</a><a href="Products.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">Products</a><a href="Industries.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">Industries</a><a href="How We Work.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">How We Work</a><a href="FAQ.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">FAQ</a><a href="Contact.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">Contact</a></div></div>
       <div><div style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; color:#FFFFFF; font-size:14px; margin-bottom:16px;">Solutions</div><div style="display:flex; flex-direction:column; gap:10px;"><sc-for list="{{ solutionsNav }}" as="s" hint-placeholder-count="7"><a href="{{ s.href }}" style="font-size:14px; color:rgba(255,255,255,.6);">{{ s.title }}</a></sc-for></div></div>
-      <div><div style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; color:#FFFFFF; font-size:14px; margin-bottom:16px;">Contact</div><div style="display:flex; flex-direction:column; gap:10px;"><a href="tel:+918793636312" style="font-size:14px; color:rgba(255,255,255,.6);">+91 87936 36312</a><span style="font-size:14px; color:rgba(255,255,255,.6);">Email: [Add email address]</span></div></div>
+      <div><div style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; color:#FFFFFF; font-size:14px; margin-bottom:16px;">Contact</div><div style="display:flex; flex-direction:column; gap:10px;"><a href="tel:+918793636312" style="font-size:14px; color:rgba(255,255,255,.6);">+91 87936 36312</a><span style="font-size:14px; color:rgba(255,255,255,.6);">Email: Shreejient03@gmail.com</span></div></div>
     </div>
     <div style="max-width:1280px; margin:0 auto; display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; padding-top:24px;">
       <p style="font-size:12.5px; color:rgba(255,255,255,.45); margin:0;">© 2026 Shreeji Enterprises. All rights reserved. | GSTIN 27APJPB5542G1Z1 | Vasai West, Maharashtra</p>
@@ -245,14 +245,6 @@ class Component extends DCLogic {
     const logoHeight = scrolled && !isMobile ? '30px' : '36px';
 
     const products = [
-      { title: 'Compact Protector for Small Structures', desc: 'A light, compact unit created for small structures that fall within its protection radius.', apps: ['Telecom poles', 'Power lines', 'Guard posts'] },
-      { title: 'Standard Protector for Residential & Light Commercial Use', desc: 'A general-purpose model for ground-based structures of moderate size.', apps: ['Homes', 'Small buildings', 'Godowns'] },
-      { title: 'High-Capacity Protector (120 m Class)', desc: 'Greater charge-compensation capability for large facilities and demanding sites.', apps: ['Large complexes', 'Mining sites', 'Vessels'] },
-      { title: 'High-Temperature Version', desc: 'Engineered for installations where heat is a constant factor, up to about 400°C.', apps: ['Chimneys', 'Furnaces', 'Process industries'] },
-      { title: 'Corrosion-Resistant Stainless Version', desc: 'Built from corrosion-resistant stainless steel for chemically aggressive and salt-laden atmospheres.', apps: ['Chemical plants', 'Refineries', 'Coastal sites'] },
-      { title: 'High-Vibration / Anti-Fall Version', desc: 'A reinforced design with additional fixing to prevent dislodging on vibrating structures.', apps: ['Drilling derricks', 'Towers'] },
-      { title: 'Advanced Material Version', desc: 'A premium model using advanced carbon-based material properties for specialised applications.', apps: ['Specialised installations'] },
-      { title: 'Twin High-Load Version', desc: 'A high-performance unit for extreme electric field conditions and high electrical load environments.', apps: ['High-load industrial sites'] },
       { title: 'DDCE 50plus', desc: 'Field-compensation protector for general ground-based structures, with coverage up to about 60 m where local codes permit.', apps: ['Buildings', 'Warehouses', 'Plants'], img: './assets/products/ddce-50plus.jpeg' },
       { title: 'DDCE 100 plus', desc: 'Higher-capacity field-compensation protector that reduces indirect electromagnetic pulse damage, with coverage up to about 120 m where codes permit.', apps: ['Large buildings', 'Industrial plants', 'Towers'], img: './assets/products/ddce100-plus.jpg' },
       { title: 'DDCE Marine', desc: 'A passive protector for ships and offshore vessels that balances the surrounding electric field to prevent an upward strike from forming.', apps: ['Ships', 'Offshore vessels'], img: './assets/products/dinnteco-1_-01.jpg' },
