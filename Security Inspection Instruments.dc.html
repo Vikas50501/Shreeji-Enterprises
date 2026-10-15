@@ -20,7 +20,6 @@
     a:hover { color: #3A9E22; }
     * { box-sizing: border-box; }
     section { text-align: center; }
-    h1, h2 { text-transform: uppercase; }
     section > div[style*="max-width"] { margin-left: auto !important; margin-right: auto !important; }
     .cta-actions { justify-content: center !important; }
     section input, section textarea, section select { text-align: left; }
@@ -76,6 +75,7 @@
       </sc-if>
       <div style="display:flex; align-items:center; gap:16px; flex-shrink:0;">
         <sc-if value="{{ !isMobile }}" hint-placeholder-val="{{ true }}"><a href="Contact.dc.html" class="btn-outline" style="display:inline-block; padding:10px 20px; border-radius:100px; border:1px solid #D6E4E1; color:#0C2530; font-weight:600; font-size:14px;">Contact Us</a></sc-if>
+        <sc-if value="{{ !isMobile }}" hint-placeholder-val="{{ true }}"><a href="Contact.dc.html#enquiry" class="btn-magnetic" style="display:inline-block; padding:11px 24px; border-radius:100px; background:linear-gradient(90deg,#3A9E22,#0A4FB0); color:#fff; font-weight:600; font-size:14px;">Get a Quote</a></sc-if>
         <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
           <button onClick="{{ toggleMobileMenu }}" aria-label="Open menu" class="icon-btn" style="width:40px; height:40px; border-radius:50%; border:1px solid #D6E4E1; background:transparent; display:flex; align-items:center; justify-content:center; cursor:pointer;">
             <svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M0 1H18M0 7H18M0 13H18" stroke="#0C2530" stroke-width="1.6" stroke-linecap="round" /></svg>
@@ -113,7 +113,7 @@
       <a href="tel:+918793636312" aria-label="Call Now" class="fab-btn" style="width:54px; height:54px; border-radius:50%; background:linear-gradient(135deg,#3A9E22,#0A4FB0); display:flex; align-items:center; justify-content:center; box-shadow:0 10px 24px rgba(6,31,42,.3);">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 3.9c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" fill="#fff"/></svg>
       </a>
-      <a href="https://wa.me/910000000000" aria-label="WhatsApp" rel="noopener" target="_blank" class="fab-btn" style="width:54px; height:54px; border-radius:50%; background:#1F8A4C; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 24px rgba(6,31,42,.3);">
+      <a href="https://wa.me/918793636312" aria-label="WhatsApp" rel="noopener" target="_blank" class="fab-btn" style="width:54px; height:54px; border-radius:50%; background:#1F8A4C; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 24px rgba(6,31,42,.3);">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.4A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z" fill="#fff"/></svg>
       </a>
     </div>
@@ -172,7 +172,7 @@
         <span style="display:inline-block; background:#fff; border-radius:16px; padding:10px 16px; margin-bottom:18px;"><img src="./assets/logo-light.png" alt="Shreeji Enterprises" style="height:28px; display:block;" /></span>
         <p style="font-size:14px; line-height:1.7; color:rgba(255,255,255,.55); max-width:260px; margin:0;">HF/204, Jayraj Nagar CHS, Ambadi Road, near Gokul Park, Vasai West, Vasai Virar, Palghar, Maharashtra – 401202</p>
       </div>
-      <div><div style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; color:#FFFFFF; font-size:14px; margin-bottom:16px;">Quick Links</div><div style="display:flex; flex-direction:column; gap:10px;"><a href="About Us.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">About</a><a href="Industries.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">Industries</a><a href="How We Work.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">How We Work</a><a href="FAQ.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">FAQ</a><a href="Contact.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">Contact</a></div></div>
+      <div><div style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; color:#FFFFFF; font-size:14px; margin-bottom:16px;">Quick Links</div><div style="display:flex; flex-direction:column; gap:10px;"><a href="About Us.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">About</a><a href="Products.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">Products</a><a href="Industries.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">Industries</a><a href="How We Work.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">How We Work</a><a href="FAQ.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">FAQ</a><a href="Contact.dc.html" style="font-size:14px; color:rgba(255,255,255,.6);">Contact</a></div></div>
       <div><div style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; color:#FFFFFF; font-size:14px; margin-bottom:16px;">Solutions</div><div style="display:flex; flex-direction:column; gap:10px;"><sc-for list="{{ solutionsNav }}" as="s" hint-placeholder-count="7"><a href="{{ s.href }}" style="font-size:14px; color:rgba(255,255,255,.6);">{{ s.title }}</a></sc-for></div></div>
       <div><div style="font-family:'Bricolage Grotesque', sans-serif; font-weight:600; color:#FFFFFF; font-size:14px; margin-bottom:16px;">Contact</div><div style="display:flex; flex-direction:column; gap:10px;"><a href="tel:+918793636312" style="font-size:14px; color:rgba(255,255,255,.6);">+91 87936 36312</a><span style="font-size:14px; color:rgba(255,255,255,.6);">Email: Shreejient03@gmail.com</span></div></div>
     </div>
